@@ -1,4 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Test</h1>
+    {% for drink in drinks %}
+        {{drink.liquor}}
+        {{drink.publisher_name}}
+        {{drink.drink_name}}
+        {{drink.ingredients}}
+        {{drink.notes}}
+    {% endfor %}
 {% endblock %}
