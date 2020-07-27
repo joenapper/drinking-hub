@@ -19,6 +19,11 @@ def home():
     return render_template('index.html', drinks=mongo.db.drinks.find())
 
 
+@app.route('/get_drinks')
+def get_drinks():
+    return render_template('drinks.html')
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
