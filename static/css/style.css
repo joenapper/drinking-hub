@@ -82,3 +82,32 @@ nav a {
     width: 100%;
     transition: .5s;
 }
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #f4f4f4;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+/*Navbar Hamburger Menu - Activates when nav links can't fit on the same line*/
+@media screen and (max-width:768px) {
+    .nav-links li {
+        padding: 0;
+        opacity: 0;
+    }
+
+    .nav-links a::after {
+        display: none
+    }
+
+    .burger {
+        display: block;
+    }
+}
