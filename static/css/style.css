@@ -159,3 +159,13 @@ nav a {
 .burger-toggle .btm-line {
     transform: rotate(45deg) translate(-5px,-6px);
 }
+
+/* Landing Page ("Index.html") ---------------------------------- */
+#welcome {
+    text-align: center
+}
+
+.websiteLogo {
+    max-width: 80px;
+    max-height: 80px;
+}
