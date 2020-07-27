@@ -188,3 +188,19 @@ nav a {
     font-size: 1.5em;
     padding: .5em 1em
 }
+
+#line {
+    height: 2px;
+    width: 60%;
+    margin: 0 20%;
+    margin-bottom: 1em;
+    background-color: #2474D2;
+    border-radius: 5px 
+}
+
+#about a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2474D2;
+    font-weight: 500;
+}
