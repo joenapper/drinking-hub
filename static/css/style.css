@@ -181,12 +181,14 @@ nav a {
     max-height: 600px;
     border: 5px solid #2474D2;
     border-radius: 5px;
-    text-align: center
+    text-align: center;
+    padding: 2em
 }
 
 #about p {
     font-size: 1.5em;
-    padding: .5em 1em
+    margin-top: 0;
+    padding: 0 1em
 }
 
 #line {
@@ -203,4 +205,5 @@ nav a {
     text-decoration: none;
     color: #2474D2;
     font-weight: 500;
+    /* padding: 1em 0 */
 }
