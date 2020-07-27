@@ -224,3 +224,27 @@ nav a {
     border-radius: 5px;
     text-decoration: none
 } 
+
+/* Footer ---------------------------------- */
+
+footer {
+    width: 60%;
+    padding: 0 20%;
+    background-color: #2474D2;
+    color: #f4f4f4;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center 
+}
+
+.footerLeft {
+    display: flex;
+}
+
+.footerLeft a {
+    padding-right: 2em;
+    text-decoration: none;
+    color: #f4f4f4;
+    cursor: pointer;
+}
