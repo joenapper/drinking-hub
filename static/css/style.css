@@ -94,6 +94,7 @@ nav a {
     background-color: #f4f4f4;
     margin: 5px;
     border-radius: 4px;
+    transition: all 1s ease;
 }
 
 /*Navbar Hamburger Menu - Activates when nav links can't fit on the same line*/
@@ -131,4 +132,16 @@ nav a {
 
 .nav-active {
     transform: translateX(0);
+}
+
+.burger-toggle .top-line {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.burger-toggle .mid-line {
+    opacity: 0;
+}
+
+.burger-toggle .btm-line {
+    transform: rotate(45deg) translate(-5px,-6px);
 }
