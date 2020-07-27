@@ -1,3 +1,28 @@
+/* General CSS ---------------------------------- */
+html,
 body {
-    background-color: red
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Saira, sans-serif;
+    background-color: #F4F4F4
+}
+
+.container {
+    width: 60%;
+    margin: 5em 20%;
+}
+
+h2 {
+    font-size: 3em;
+    margin: 0;
+    color: #2474D2
+}
+
+.right {
+    text-align: right
+}
+
+.col {
+    color: #2474D2;
 }
