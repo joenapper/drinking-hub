@@ -181,6 +181,7 @@ nav a {
     border: 5px solid #2474D2;
     border-radius: 5px;
     text-align: center;
+    box-sizing: border-box;
     padding: 2em;
 }
 
