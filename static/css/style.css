@@ -26,3 +26,46 @@ h2 {
 .col {
     color: #2474D2;
 }
+
+/* Header ---------------------------------- */
+header {
+    width: 100%;
+    z-index: 2;
+}
+
+nav {
+    width: 60%;
+    padding: 0 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    background-color: #2474D2;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    padding: 0
+}
+
+.nav-links li {
+    list-style: none;
+    padding-right: 3em;
+    padding-left: 0 
+}
+
+nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.nav-links a {
+    letter-spacing: 3px;
+    font-size: 1em;
+}
