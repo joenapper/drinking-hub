@@ -1,10 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-    {% for drink in drinks %}
-        {{drink.liquor}}
-        {{drink.publisher_name}}
-        {{drink.drink_name}}
-        {{drink.ingredients}}
-        {{drink.notes}}
-    {% endfor %}
+    <section class="container">
+        <img src="static/images/drinkDatabaseLogo.png" alt="The Drinking Database">
+    </section>
 {% endblock %}
