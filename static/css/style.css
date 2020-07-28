@@ -266,12 +266,16 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-gap: 1em
+    grid-gap: 1em;
 }
 
 .card {
     background-color: green;
     text-align: center;
+}
+
+.card h4 {
+    margin-bottom: 0
 }
 
 .cardTop {
@@ -310,5 +314,5 @@ footer {
 }
 
 .drinkLiquors li {
-    margin: 0 1em
+    margin: 0 1em;
 }
