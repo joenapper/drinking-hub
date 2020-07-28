@@ -265,7 +265,7 @@ footer {
     background-color: red;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     grid-gap: 1em
 }
 
@@ -277,4 +277,13 @@ footer {
 .drinkImage {
     height: 250px;
     width: 100%;
+}
+/* 
+.card h3 {
+    color: #2474D2
+} */
+
+.card li {
+    list-style: none;
+    text-align: left
 }

@@ -7,12 +7,16 @@
 
                 <img class="drinkImage" src="{{drink.image}}" alt="" srcset="">
                 <h3>{{drink.drink_name}}</h3>
+                <ul class="drinkIngredients">
                 {% for ingredient in drink.ingredients %}
                      <li><p><span class="col">&gt;</span> {{ingredient}}</p></li>
                 {% endfor %}
+                </ul>
+                <ul>
                 {% for liquor in drink.liquor_name %}
                     <li>{{liquor}}</li>
                 {% endfor %}
+                </ul>
             </div>
             {% endfor %}
         </div>
