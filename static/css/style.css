@@ -307,6 +307,11 @@ footer {
     text-align: left;
 }
 
+.drinkIngredients {
+    margin: 0;
+    margin-top: 1em
+}
+
 .drinkIngredientsTitle {
     text-align: left
 }
