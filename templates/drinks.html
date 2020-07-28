@@ -4,15 +4,20 @@
         <div class="row">
             {% for drink in drinks %}
             <div class="card">
-
-                <img class="drinkImage" src="{{drink.image}}" alt="" srcset="">
-                <h3>{{drink.drink_name}}</h3>
-                <ul class="drinkIngredients">
-                {% for ingredient in drink.ingredients %}
-                     <li><p><span class="col">&gt;</span> {{ingredient}}</p></li>
-                {% endfor %}
-                </ul>
-                <ul>
+                <div class="cardTop">
+                    <div>
+                        <img class="drinkImage" src="{{drink.image}}" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h3>{{drink.drink_name}}</h3>
+                        <ul class="drinkIngredients">
+                            {% for ingredient in drink.ingredients %}
+                            <li><p><span class="col">&gt;</span> {{ingredient}}</p></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <ul class="drinkLiquors">
                 {% for liquor in drink.liquor_name %}
                     <li>{{liquor}}</li>
                 {% endfor %}

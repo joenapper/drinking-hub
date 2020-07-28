@@ -271,19 +271,35 @@ footer {
 
 .card {
     background-color: green;
-    text-align: center
+    text-align: center;
+}
+
+.cardTop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 
 }
 
 .drinkImage {
     height: 250px;
     width: 100%;
+    float: left;
 }
-/* 
+
 .card h3 {
-    color: #2474D2
-} */
+    /* color: #2474D2 */
+    margin: 0;
+    padding: 0
+} 
 
 .card li {
     list-style: none;
-    text-align: left
+    text-align: left;
+}
+
+.drinkIngredients p {
+    margin: 0
+}
+
+.drinkLiquors {
+    float: left;
 }
