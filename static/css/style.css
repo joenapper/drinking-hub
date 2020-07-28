@@ -297,10 +297,15 @@ footer {
 
 .card li {
     list-style: none;
+    
+}
+
+.cardTop li {
+    list-style: none;
     text-align: left;
 }
 
-.a {
+.drinkIngredientsTitle {
     text-align: left
 }
 
@@ -309,10 +314,19 @@ footer {
 }
 
 .drinkLiquors {
-    float: left;
-    display: flex
+    padding: 0;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em 
 }
 
 .drinkLiquors li {
-    margin: 0 1em;
+    
+    background-color: #2474D2;
+    color: #f4f4f4;
+    border-radius: 5px;
+    
 }
