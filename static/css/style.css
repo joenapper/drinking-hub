@@ -272,6 +272,7 @@ footer {
     border: solid 5px #2474D2;
     border-radius: 5px;
     text-align: center;
+    background-color: #FFF
 }
 
 .card h4 {
@@ -280,7 +281,8 @@ footer {
 
 .cardTop {
     display: grid;
-    grid-template-columns: 1fr 1fr 
+    grid-template-columns: 1fr 1fr;
+    background-color: #F4F4F4 
 }
 
 .drinkImage {
