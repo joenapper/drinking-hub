@@ -269,7 +269,8 @@ footer {
 }
 
 .card {
-    background-color: green;
+    border: solid 5px #2474D2;
+    border-radius: 5px;
     text-align: center;
 }
 
