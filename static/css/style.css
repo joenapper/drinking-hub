@@ -275,7 +275,7 @@ footer {
     background-color: #FFF
 }
 
-.card h4 {
+.cardTop h4 {
     margin-bottom: 0
 }
 
@@ -313,6 +313,16 @@ footer {
 
 .drinkIngredients p {
     margin: 0
+}
+
+.viewMore {
+    padding-top: 1em;
+    text-align: left
+}
+
+.viewMore a {
+    color: #2474D2;
+    font-weight: 700
 }
 
 .drinkLiquors {
