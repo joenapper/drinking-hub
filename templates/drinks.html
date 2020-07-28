@@ -4,7 +4,15 @@
         <div class="row">
             {% for drink in drinks %}
             <div class="card">
+
+                <img class="drinkImage" src="{{drink.image}}" alt="" srcset="">
                 <h3>{{drink.drink_name}}</h3>
+                {% for ingredient in drink.ingredients %}
+                     <li><p><span class="col">&gt;</span> {{ingredient}}</p></li>
+                {% endfor %}
+                {% for liquor in drink.liquor_name %}
+                    <li>{{liquor}}</li>
+                {% endfor %}
             </div>
             {% endfor %}
         </div>

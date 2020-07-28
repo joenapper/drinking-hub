@@ -273,3 +273,8 @@ footer {
     background-color: green;
     text-align: center
 }
+
+.drinkImage {
+    height: 250px;
+    width: 100%;
+}
