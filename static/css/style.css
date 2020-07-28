@@ -306,4 +306,9 @@ footer {
 
 .drinkLiquors {
     float: left;
+    display: flex
+}
+
+.drinkLiquors li {
+    margin: 0 1em
 }
