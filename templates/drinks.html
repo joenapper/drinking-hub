@@ -11,6 +11,9 @@
                     <div>
                         <h3>{{drink.drink_name}}</h3>
                         <ul class="drinkIngredients">
+                        <div class="a">
+                            <h4>Ingredients</h4>
+                        </div>
                             {% for ingredient in drink.ingredients %}
                             <li><p><span class="col">&gt;</span> {{ingredient}}</p></li>
                             {% endfor %}
