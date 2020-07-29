@@ -344,8 +344,10 @@ footer {
 }
 
 /* Cocktail Page ---------------------------------- */
-.pageMax {
-    margin: 8em 20% 
+.backToList {
+    background-color: #2474D2;
+    color: #f4f4f4;
+    padding: .4em 1em
 }
 
 .cocktailTop {
