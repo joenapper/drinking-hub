@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
-    {% for liquor in drinks.liquor_name %}
-        <li>{{ liquor }}</li>
-    {% endfor %}
-    <p>{{drinks.drink_name}}</p>
+    <h2>{{drinks.drink_name}}</h2>
+    <img src="{{drinks.image}}" alt="">
     {% for ingredient in drinks.ingredients %}
         <li>{{ ingredient }}</li>
     {% endfor %}
     {% for note in drinks.notes %}
         <li>{{note}}</li>
+    {% endfor %}
+    {% for liquor in drinks.liquor_name %}
+        <li>{{ liquor }}</li>
     {% endfor %}
 {% endblock %}
