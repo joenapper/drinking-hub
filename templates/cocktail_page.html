@@ -7,18 +7,18 @@
                 <img src="{{drinks.image}}" alt="">
             </div>
             <div>
-            {% for ingredient in drinks.ingredients %}
-                <li>{{ ingredient }}</li>
-            {% endfor %}
-            {% for note in drinks.notes %}
-                <li>{{note}}</li>
-            {% endfor %}
+                {% for ingredient in drinks.ingredients %}
+                    <li>{{ ingredient }}</li>
+                {% endfor %}
+                {% for note in drinks.notes %}
+                    <li>{{note}}</li>
+                {% endfor %}
             </div>
         </div>
         <div>
-        {% for liquor in drinks.liquor_name %}
-            <li>{{ liquor }}</li>
-        {% endfor %}
+            {% for liquor in drinks.liquor_name %}
+                <li>{{ liquor }}</li>
+            {% endfor %}
         </div>
     </main>
 {% endblock %}
