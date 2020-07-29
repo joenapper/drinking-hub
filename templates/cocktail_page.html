@@ -6,9 +6,9 @@
             <div>
                 <img src="{{drinks.image}}" alt="">
             </div>
-            <div>
+            <div class="cocktailIngredients">
                 {% for ingredient in drinks.ingredients %}
-                    <li>{{ ingredient }}</li>
+                    <li><p><span class="col">&gt;</span> {{ ingredient }}</p></li>
                 {% endfor %}
                 {% for note in drinks.notes %}
                     <li>{{note}}</li>

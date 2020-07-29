@@ -353,3 +353,12 @@ footer {
 .cocktailTop {
     display: flex;
 }
+
+.cocktailIngredients {
+    padding-left: 1em;
+    list-style: none
+}
+
+.cocktailIngredients p {
+    margin: 0;
+}
