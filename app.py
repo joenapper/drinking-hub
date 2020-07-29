@@ -24,6 +24,13 @@ def get_drinks():
     return render_template('drinks.html', drinks=mongo.db.drinks.find())
 
 
+@app.route('/display_cocktail/<drink_id>')
+def display_cocktail(drink_id):
+    drinks = mongo.db.drinks.find_one({"_id": ObjectId(drink_id)})
+    ingredients = drinks["ingredients"]
+    return render_template('cocktail_page.html', drinks=drinks, ingredients=ingredients)
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),

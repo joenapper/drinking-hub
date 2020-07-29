@@ -18,7 +18,8 @@
                             <li><p><span class="col">&gt;</span> {{ingredient}}</p></li>
                             {% endfor %}
                             <div class="viewMore">
-                            <a href="#">View Cocktail</a>
+                            <a href="{{url_for('display_cocktail', drink_id=drink._id)}}">View Cocktail</a>
+                           
                             </div>
                         </ul>
                     </div>
