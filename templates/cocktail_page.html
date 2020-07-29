@@ -3,7 +3,7 @@
     <title>{% block title %} - {{drinks.drink_name}} {% endblock %}</title>
 
     <section class="container">
-        <a class="backToList" href="#">Back To List</a>
+        <a class="backToList" href="{{url_for('get_drinks')}}">Back To List</a>
     </section>
 
     <main class="container">
