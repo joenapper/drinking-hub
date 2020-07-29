@@ -398,3 +398,20 @@ footer {
     margin: 0;
     color: #000;
 }
+
+.cocktailLiquors {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none
+}
+
+.cocktailLiquors li {
+    background-color: #2474D2;
+    margin: 1em;
+    padding: .4em .8em;
+    border-radius: 4px
+}
+
+.cocktailLiquors li:nth-child(1) {
+    margin-left: 0
+}
