@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
+    <title>{% block title %} - {{drinks.drink_name}} {% endblock %}</title>
+
     <main class="container pageMax">
         <h2>{{drinks.drink_name}}</h2>
         <div class="cocktailTop">
