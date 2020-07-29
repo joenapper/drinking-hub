@@ -357,6 +357,8 @@ footer {
 .cocktailImage {
     max-width: 500px;
     max-height: 400px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); 
 }
 
 .cocktailIngredients {
