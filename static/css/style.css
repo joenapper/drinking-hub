@@ -354,6 +354,11 @@ footer {
     display: flex;
 }
 
+.cocktailImage {
+    max-width: 500px;
+    max-height: 400px;
+}
+
 .cocktailIngredients {
     padding-left: 1em; 
     list-style: none
