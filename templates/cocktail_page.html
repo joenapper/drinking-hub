@@ -10,9 +10,11 @@
                 {% for ingredient in drinks.ingredients %}
                     <li><p><span class="col">&gt;</span> {{ ingredient }}</p></li>
                 {% endfor %}
-                {% for note in drinks.notes %}
-                    <li>{{note}}</li>
-                {% endfor %}
+                <ol>
+                    {% for note in drinks.notes %}
+                        <li><p>{{note}}</p></li>
+                    {% endfor %}
+                </ol>
             </div>
         </div>
         <div>

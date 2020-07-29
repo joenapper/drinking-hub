@@ -355,10 +355,24 @@ footer {
 }
 
 .cocktailIngredients {
-    padding-left: 1em;
+    padding-left: 1em; 
     list-style: none
 }
 
 .cocktailIngredients p {
     margin: 0;
+}
+
+.cocktailIngredients ol li {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2474D2;
+    margin-left: -1em; 
+}
+
+.cocktailIngredients ol li p {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+    color: #000;
 }
