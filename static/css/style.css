@@ -416,3 +416,45 @@ footer {
 .cocktailLiquors li:nth-child(1) {
     margin-left: 0
 }
+
+/* Add Cocktail ---------------------------------- */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #2474D2;
+    color: #1A224B;
+    margin-top: 30px;
+    font-size: 1.2em;
+    font-family: Saira, sans-serif;
+    resize: none
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+form button {
+    height: 60px;
+    max-width: 30%;
+    margin-left: 80%;
+    margin-top: 30px;
+    background-color: #2474D2;
+    cursor: pointer;
+    color: #f4f4f4;
+    font-size: 1.2em;
+    font-family: Saira, sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    outline: none;
+    border: none
+}
