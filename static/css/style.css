@@ -350,6 +350,10 @@ footer {
 
 /* Cocktail Page ---------------------------------- */
 
+.pageMax {
+    margin: 8em 20% 
+}
+
 .cocktailTop {
     display: flex;
 }
