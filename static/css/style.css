@@ -363,6 +363,21 @@ footer {
     margin: 0;
 }
 
+.cocktailIngredients h4 {
+    margin-bottom: .5em;
+    color: #2474D2;
+    font-size: 1.2em
+}
+
+.cocktailIngredients h4:nth-child(1) {
+    margin: 0;
+    margin-bottom: .5em
+}
+
+.cocktailIngredients ol {
+    margin: 0
+}
+
 .cocktailIngredients ol li {
     font-weight: bold;
     font-size: 1.2em;
