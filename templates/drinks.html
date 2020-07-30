@@ -10,14 +10,14 @@
                         <img class="drinkImage" src="{{drink.image}}" alt="{{drink.drink_name}}">
                     </div>
                     <div>
-                        <h3>{{drink.drink_name}}</h3>
+                        <h3>{{drink.name}}</h3>
                         <ul class="drinkIngredients">
                         <div class="drinkIngredientsTitle">
                             <h4>Ingredients</h4>
                         </div>
-                            {% for ingredient in drink.ingredients %}
+                            <!-- {% for ingredient in drink.ingredients %}
                             <li><p><span class="col">&gt;</span> {{ingredient}}</p></li>
-                            {% endfor %}
+                            {% endfor %} -->
                             <div class="viewMore">
                             <a href="{{url_for('display_cocktail', drink_id=drink._id)}}">View Cocktail</a>
                            
@@ -27,9 +27,10 @@
                 </div>
                 <h4>Liquors</h4>
                 <ul class="drinkLiquors">
-                {% for liquor in drink.liquor_name %}
-                    <li>{{liquor}}</li>
-                {% endfor %}
+                <li>{{drink.liquors}}</li>
+                <!-- {% for liquor in drink.liquors %}
+                    <li>{{ liquor }}</li>
+                {% endfor %}    -->
                 </ul>
             </div>
             {% endfor %}

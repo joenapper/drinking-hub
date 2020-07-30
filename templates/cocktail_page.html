@@ -19,11 +19,7 @@
                     <li><p><span class="col">&gt;</span> {{ ingredient }}</p></li>
                 {% endfor %} 
                 <h4>How to make:</h4>
-                <ol>
-                    {% for note in notes %}
-                        <li><p>{{note}}</p></li>
-                    {% endfor %}
-                </ol>
+                <p>{{ drinks.notes }}</p>
             </div>
         </div>
         <div class="cocktailLiquors">
