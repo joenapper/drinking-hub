@@ -33,7 +33,14 @@ def display_cocktail(drink_id):
 
 @app.route('/add_cocktail')
 def add_cocktail():
-    return render_template('add_cocktail.html')
+    return render_template('add_cocktail.html', liquors=mongo.db.liquors.find())
+
+
+@app.route('/insert_cocktail', methods=['POST'])
+def insert_cocktail():
+    drinks = mongo.db.drinks
+    drinks.insert_one(request.form.to_dict())
+    return redirect(url_for('get_drinks'))
 
 
 if __name__ == '__main__':
