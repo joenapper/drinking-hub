@@ -28,7 +28,8 @@ def get_drinks():
 def display_cocktail(drink_id):
     drinks = mongo.db.drinks.find_one({"_id": ObjectId(drink_id)})
     ingredients = drinks["ingredients"].split(",")
-    return render_template('cocktail_page.html', drinks=drinks, ingredients=ingredients)
+    notes = drinks['notes'].split(",")
+    return render_template('cocktail_page.html', drinks=drinks, ingredients=ingredients, notes=notes)
 
 
 @app.route('/add_cocktail')

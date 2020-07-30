@@ -14,12 +14,13 @@
             </div>
             <div class="cocktailIngredients">
                 <h4>Ingredients</h4>
-                {% for ingredient in drinks.ingredients %}
+                <!-- {{drinks.ingredients}} -->
+                {% for ingredient in ingredients %}
                     <li><p><span class="col">&gt;</span> {{ ingredient }}</p></li>
-                {% endfor %}
+                {% endfor %} 
                 <h4>How to make:</h4>
                 <ol>
-                    {% for note in drinks.notes %}
+                    {% for note in notes %}
                         <li><p>{{note}}</p></li>
                     {% endfor %}
                 </ol>
