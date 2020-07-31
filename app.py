@@ -57,12 +57,18 @@ def update_cocktail(drink_id):
     drinks = mongo.db.drinks
     drinks.update( {'_id': ObjectId(drink_id)},
     {
-        'liquors': request.form.get('liquors'), 
-        'name': request.form.get('name'), 
-        'image': request.form.get('image'), 
-        'ingredients': request.form.get('ingredients'), 
+        'liquors': request.form.get('liquors'),
+        'name': request.form.get('name'),
+        'image': request.form.get('image'),
+        'ingredients': request.form.get('ingredients'),
         'notes': request.form.get('notes')
     })
+    return redirect(url_for('get_drinks'))
+
+
+@app.route('/delete_cocktail/<drink_id>')
+def delete_cocktail(drink_id):
+    mongo.db.drinks.remove({'_id': ObjectId(drink_id)})
     return redirect(url_for('get_drinks'))
 
 
