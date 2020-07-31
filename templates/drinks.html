@@ -1,6 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
     <title>Drinking Hub{% block title %} - All Drinks {% endblock %}</title>
+
+    <section class="container">
+        <div id="liquorCategories">
+            <a href="#" class="category">Vodka</a>
+            <a href="#" class="category">Tequila</a>
+            <a href="#" class="category">Rum</a>
+            <a href="#" class="category">Gin</a>
+            <a href="#" class="category">Whiskey</a>
+            <a href="#" class="category">Brandy</a>
+            <a href="#" class="category">Wine</a>
+            <a href="#" class="category">All</a>
+        </div>
+    </section>
+
     <main class="container">
         <div class="row">
             {% for drink in drinks %}
@@ -9,27 +23,23 @@
                     <div>
                         <img class="drinkImage" src="{{drink.image}}" alt="{{drink.drink_name}}">
                     </div>
-                    <div>
+                    <div class="drinkName">
                         <h3>{{drink.name}}</h3>
-                        <ul class="drinkIngredients">
-                        <div class="drinkIngredientsTitle">
-                            <h4>Ingredients</h4>
-                        </div>
-                            <!-- {% for ingredient in drink.ingredients %}
-                            <li><p><span class="col">&gt;</span> {{ingredient}}</p></li>
-                            {% endfor %} -->
-                            <div class="viewMore">
+                        <div class="viewMore">
                             <a href="{{url_for('display_cocktail', drink_id=drink._id)}}">View Cocktail</a>
-                           
-                            </div>
-                        </ul>
+                        </div>
                     </div>
                 </div>
-                <h4>Liquors</h4>
+
+                <h4>Contains:</h4>
                 <ul class="drinkLiquors">
-                <li>{{drink.liquors}}</li>
-                
+                    <li>{{drink.liquors}}</li>
                 </ul>
+
+                <div class="manage">
+                    <a class="manageBtn editBtn" href="#">Edit</a>
+                    <a class="manageBtn deleteBtn" href="#">Delete</a>
+                </div>
             </div>
             {% endfor %}
         </div>

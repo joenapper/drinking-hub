@@ -262,8 +262,8 @@ footer {
 .row {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em 2em;
 }
 
 .card {
@@ -279,14 +279,18 @@ footer {
 
 .cardTop {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     background-color: #F4F4F4 
 }
 
 .drinkImage {
-    height: 250px;
+    height: 300px;
     width: 100%;
     float: left;
+}
+
+.drinkName {
+    /* text-align: center */
 }
 
 .card h3 {
@@ -304,28 +308,24 @@ footer {
     text-align: left;
 }
 
-.drinkIngredients {
-    margin: 0;
-    margin-top: 1em
-}
 
-.drinkIngredientsTitle {
-    text-align: left
-}
-
-.drinkIngredients p {
-    margin: 0
-}
 
 .viewMore {
-    padding-top: 1em;
-    text-align: left
+    padding: 1em 0;
+    /* text-align: left */
 }
 
 .viewMore a {
-    color: #2474D2;
-    font-weight: 700
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline
 }
+
+.card h4 {
+    color: #2474D2;
+    margin: 0;
+    padding: 0
+} 
 
 .drinkLiquors {
     padding: 0;
@@ -341,6 +341,29 @@ footer {
     background-color: #2474D2;
     color: #f4f4f4;
     border-radius: 5px;
+}
+
+.manage {
+    background-color: #f4f4f4;
+    
+    padding: 1em
+}
+
+.manageBtn {
+    padding: .4em 1em;
+    margin: 0 .5em;
+    border-radius: 5px;
+    color: #000
+} 
+
+.editBtn {
+    background-color: #fff;
+    box-shadow: inset 0px 0px 0px 5px #2474D2;
+}
+
+.deleteBtn {
+    background-color: #FF0000;
+    opacity: .8;
 }
 
 /* Cocktail Page ---------------------------------- */
