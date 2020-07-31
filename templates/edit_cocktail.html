@@ -9,16 +9,16 @@
     <main class="container">
         <form action="{{url_for('insert_cocktail')}}" method="POST">
             <label for="liquors">What type of liquor does your cocktail have?</label>
-            <input type="text" name=liquors id="liquors" placeholder="Add a commar after each liquor, if more than one" required>
+            <input type="text" name=liquors id="liquors" placeholder="Add a commar after each liquor, if more than one" required value="{{drinks.liquors}}">
             <label for="name">Name of your cocktail:</label>
-            <input type="text" name="name" id="name" placeholder="Name Of Your Drink" required>
+            <input type="text" name="name" id="name" placeholder="Name Of Your Drink" required value="{{drinks.name}}">
             <label for="image">Image URL:</label>
-            <input type="text" name="image" id="image" placeholder="Please provide an image URL" required>
+            <input type="text" name="image" id="image" placeholder="Please provide an image URL" required value="{{drinks.image}}">
             <label for="ingredients">Ingredients</label>
-            <input type="text" name="ingredients" id="ingredients" placeholder="Add a commar after each ingredient" required>
+            <input type="text" name="ingredients" id="ingredients" placeholder="Add a commar after each ingredient" required value="{{drinks.ingredients}}">
             <label for="notes">How to make the cocktail?</label>
-            <input type="text" name="notes" id="notes" placeholder="Guide another person through the steps to make your cocktail" required>
-            <button id="submit-btn" type="submit">Add Cocktail!</button>
+            <input type="text" name="notes" id="notes" placeholder="Guide another person through the steps to make your cocktail" required value="{{drinks.notes}}">
+            <button id="submit-btn" type="submit">Edit Cocktail!</button>
         </form>
     </main>
     <!-- End -->
