@@ -353,7 +353,8 @@ footer {
     padding: .4em 1em;
     margin: 0 .5em;
     border-radius: 5px;
-    color: #000
+    color: #000;
+    transition: .2s ease-in-out
 } 
 
 .editBtn {
@@ -361,9 +362,18 @@ footer {
     box-shadow: inset 0px 0px 0px 5px #2474D2;
 }
 
+.editBtn:hover {
+    background-color: #2474D2;
+    color: #fff
+}
+
 .deleteBtn {
     background-color: #FF0000;
-    opacity: .8;
+    opacity: .4;
+}
+
+.deleteBtn:hover {
+    opacity: 1;
 }
 
 /* Cocktail Page ---------------------------------- */
