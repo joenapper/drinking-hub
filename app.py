@@ -52,6 +52,20 @@ def edit_cocktail(drink_id):
     return render_template('edit_cocktail.html', drinks=drinks, ingredients=ingredients, liquors=liquors)
 
 
+@app.route('/update_cocktail/<drink_id>', methods=['POST'])
+def update_cocktail(drink_id):
+    drinks = mongo.db.drinks
+    drinks.update( {'_id': ObjectId(drink_id)},
+    {
+        'liquors': request.form.get('liquors'), 
+        'name': request.form.get('name'), 
+        'image': request.form.get('image'), 
+        'ingredients': request.form.get('ingredients'), 
+        'notes': request.form.get('notes')
+    })
+    return redirect(url_for('get_drinks'))
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
