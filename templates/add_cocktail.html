@@ -8,21 +8,17 @@
     <!-- Contact -->
     <main class="container">
         <form action="{{url_for('insert_cocktail')}}" method="POST">
-
-            <select id="liquor" name="liquor_name">
-             {% for liquor in liquors %}
-                <option value="{{liquor.liquor_name}}">{{liquor.liquor_name}}</option>
-            {% endfor %}
-            </select>
-            
-            <!-- <input type="text" name="liquor_name" id="liquor_name" placeholder="Liquor Name" required> -->
+            <label for="liquors">What type of liquor does your cocktail have?</label>
+            <input type="text" name=liquors id="liquors" placeholder="Add a commar after each liquor, if more than one" required>
+            <label for="name">Name of your cocktail:</label>
             <input type="text" name="name" id="name" placeholder="Name Of Your Drink" required>
-            <input type="text" name="image" id="image" placeholder="Image URL" required>
-            <input type="text" name="ingredients" id="" placeholder="Add ingredient" required>
-            <input type="text" name="ingredients" id="" placeholder="Add ingredient">
-            <input type="text" name="notes" id="" placeholder="Add Step" required>
-            <input type="text" name="notes" id="" placeholder="Add Step">
-            <button id="submit-btn" class="card" type="submit">Send Message</button>
+            <label for="image">Image URL:</label>
+            <input type="text" name="image" id="image" placeholder="Please provide an image URL" required>
+            <label for="ingredients">Ingredients</label>
+            <input type="text" name="ingredients" id="ingredients" placeholder="Add a commar after each ingredient" required>
+            <label for="notes">How to make the cocktail?</label>
+            <input type="text" name="notes" id="notes" placeholder="Guide another person through the steps to make your cocktail" required>
+            <button id="submit-btn" type="submit">Add Cocktail!</button>
         </form>
     </main>
     <!-- End -->

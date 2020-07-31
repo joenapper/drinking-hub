@@ -44,6 +44,14 @@ def insert_cocktail():
     return redirect(url_for('get_drinks'))
 
 
+@app.route('/edit_cocktail/<drink_id>')
+def edit_cocktail(drink_id):
+    drinks = mongo.db.drinks.find_one({"_id": ObjectId(drink_id)})
+    ingredients = drinks["ingredients"].split(",")
+    liquors = drinks['liquors'].split(",")
+    return render_template('edit_cocktail.html', drinks=drinks, ingredients=ingredients, liquors=liquors)
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
