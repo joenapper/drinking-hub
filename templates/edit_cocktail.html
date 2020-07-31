@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+    <title>{% block title %} - Add Your Own {% endblock %}</title>
+    <section class="container">
+        <h2>Add your own cocktail!</h2>
+    </section>
+
+    <!-- Contact -->
+    <main class="container">
+        <form action="{{url_for('insert_cocktail')}}" method="POST">
+            <label for="liquors">What type of liquor does your cocktail have?</label>
+            <input type="text" name=liquors id="liquors" placeholder="Add a commar after each liquor, if more than one" required>
+            <label for="name">Name of your cocktail:</label>
+            <input type="text" name="name" id="name" placeholder="Name Of Your Drink" required>
+            <label for="image">Image URL:</label>
+            <input type="text" name="image" id="image" placeholder="Please provide an image URL" required>
+            <label for="ingredients">Ingredients</label>
+            <input type="text" name="ingredients" id="ingredients" placeholder="Add a commar after each ingredient" required>
+            <label for="notes">How to make the cocktail?</label>
+            <input type="text" name="notes" id="notes" placeholder="Guide another person through the steps to make your cocktail" required>
+            <button id="submit-btn" type="submit">Add Cocktail!</button>
+        </form>
+    </main>
+    <!-- End -->
+{% endblock %}
