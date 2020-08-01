@@ -4,14 +4,9 @@
 
     <section class="container">
         <div id="liquorCategories">
-            <a href="#" class="category">Vodka</a>
-            <a href="#" class="category">Tequila</a>
-            <a href="#" class="category">Rum</a>
-            <a href="#" class="category">Gin</a>
-            <a href="#" class="category">Whiskey</a>
-            <a href="#" class="category">Brandy</a>
-            <a href="#" class="category">Wine</a>
-            <a href="#" class="category">All</a>
+            {% for liquor in liquors %}
+                <a href="#" class="category">{{liquor.liquor_name}}</a>
+            {% endfor %}
         </div>
     </section>
 

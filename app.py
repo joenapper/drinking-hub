@@ -21,7 +21,8 @@ def home():
 
 @app.route('/get_drinks')
 def get_drinks():
-    return render_template('drinks.html', drinks=mongo.db.drinks.find())
+    liquors = mongo.db.liquors.find()
+    return render_template('drinks.html', drinks=mongo.db.drinks.find(), liquors=liquors)
 
 
 @app.route('/display_cocktail/<drink_id>')
@@ -55,7 +56,7 @@ def edit_cocktail(drink_id):
 @app.route('/update_cocktail/<drink_id>', methods=['POST'])
 def update_cocktail(drink_id):
     drinks = mongo.db.drinks
-    drinks.update( {'_id': ObjectId(drink_id)},
+    drinks.update({'_id': ObjectId(drink_id)},
     {
         'liquors': request.form.get('liquors'),
         'name': request.form.get('name'),
