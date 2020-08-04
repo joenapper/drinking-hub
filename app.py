@@ -25,6 +25,18 @@ def get_drinks():
     return render_template('drinks.html', drinks=mongo.db.drinks.find(), liquors=liquors)
 
 
+@app.route("/find_cocktails")
+def find_cocktails():
+    query = request.args.get("search")
+    search_term = mongo.db.drinks.find({"liquors": {"$regex": query}})
+    search = search_term
+    no_of_docs = mongo.db.recipes.count_documents(
+        {"liquors": {"$regex": query}})
+    return render_template(
+        "searched.html",
+        search=search_term, no_of_docs=no_of_docs)
+
+
 @app.route('/display_cocktail/<drink_id>')
 def display_cocktail(drink_id):
     drinks = mongo.db.drinks.find_one({"_id": ObjectId(drink_id)})
