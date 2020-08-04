@@ -489,14 +489,14 @@ footer {
 }
 
 /* Add Cocktail ---------------------------------- */
-form {
+.addCocktailForm {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-input,
-textarea {
+.addCocktailForm input,
+.addCocktailForm textarea {
     background-color: transparent;
     outline: none;
     border: none;
@@ -508,12 +508,12 @@ textarea {
     resize: none
 }
 
-textarea {
+.addCocktailForm textarea {
     resize: none;
     overflow: hidden;
 }
 
-form button {
+.addCocktailForm button {
     height: 60px;
     max-width: 30%;
     margin-left: 80%;
@@ -530,29 +530,29 @@ form button {
     border: none
 }
 
-label {
+.addCocktailForm label {
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 700;
     color: #2474D2
 }
 
-::-webkit-input-placeholder {
+.addCocktailForm ::-webkit-input-placeholder {
     font-size: .8em;
     font-weight: 300
 }
 
-:-ms-input-placeholder {
+.addCocktailForm :-ms-input-placeholder {
     font-size: .8em;
     font-weight: 300
 }
 
-::-moz-placeholder {
+.addCocktailForm ::-moz-placeholder {
     font-size: .8em;
     font-weight: 300
 }
 
-:-moz-placeholder {
+.addCocktailForm :-moz-placeholder {
     font-size: .8em;
     font-weight: 300
 }
