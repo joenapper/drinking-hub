@@ -26,3 +26,13 @@ function linkSlide() {
 }; 
 
 navSlide()
+
+const modal = document.getElementById('modalPopup');
+const popUp = document.getElementById('delValidation');
+const closeModal = document.getElementById('closeModal');
+
+popUp.addEventListener('click', openModal);
+
+function openModal() {
+    modal.style.display = 'block';
+}
