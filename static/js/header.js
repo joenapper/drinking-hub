@@ -30,9 +30,11 @@ navSlide()
 const modal = document.getElementById('modalPopup');
 const popUp = document.getElementById('delValidation');
 const closeModalBtn = document.getElementsByClassName('closeModalBtn')[0];
+const noValidation = document.getElementById('noVal');
 
 popUp.addEventListener('click', openModal);
 closeModalBtn.addEventListener('click', closeModal);
+noValidation.addEventListener('click', closeModal);
 window.addEventListener('click', clickOutside);
 
 function openModal() {
