@@ -22,7 +22,8 @@ def home():
 @app.route('/get_drinks')
 def get_drinks():
     liquors = mongo.db.liquors.find()
-    return render_template('drinks.html', drinks=mongo.db.drinks.find(), liquors=liquors)
+    drinks = mongo.db.drinks.find().sort('_id', -1)
+    return render_template('drinks.html', drinks=drinks, liquors=liquors)
 
 
 @app.route("/find_cocktails")
