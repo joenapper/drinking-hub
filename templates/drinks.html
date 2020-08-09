@@ -34,11 +34,10 @@
                     <li>{{drink.liquors}}</li>
                 </ul>
 
-                <div class="manage">
+                <!-- <div class="manage">
                     <a class="manageBtn editBtn" href="{{url_for('edit_cocktail', drink_id=drink._id)}}">Edit</a>
-                    <a class="manageBtn deleteBtn" id="delValidation" href="#" onclick="myFunc" >Delete</a>
-                    <!-- {{url_for('delete_cocktail', drink_id=drink._id)}} -->
-                </div>
+                    <a class="manageBtn deleteBtn" id="delValidation" href="{{url_for('delete_cocktail', drink_id=drink._id)}}">Delete</a> 
+                </div> -->
             </div>
             {% endfor %}
         </div>
