@@ -28,7 +28,7 @@ def get_drinks():
 
 @app.route("/find_cocktails")
 def find_cocktails():
-    query = request.args.get("search")
+    query = request.args.get("search").capitalize()
     search_term = mongo.db.drinks.find({"liquors": {"$regex": query}})
     search = search_term
     no_of_docs = mongo.db.recipes.count_documents(
