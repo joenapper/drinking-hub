@@ -40,8 +40,8 @@
             <span class="closeModalBtn">&times;</span>
             <p>Are you sure you want to delete this cocktail?</p>
             <div class="validation">
-                <a id="noVal" href="#">No</a>
-                <a class="yesVal" href="#">Yes</a>
+                <a id="noVal">No</a>
+                <a href="{{url_for('delete_cocktail', drink_id=drinks._id)}}">Yes</a>
             </div>
         </div>
     </div>
