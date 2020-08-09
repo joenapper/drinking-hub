@@ -440,7 +440,7 @@ footer {
     margin-top: 0
 }
 
-.closeModal {
+.closeModalBtn {
     float: right;
     color: #ccc;
     font-size: 2em;
@@ -448,8 +448,8 @@ footer {
     cursor: pointer;
 }
 
-.closeModal:hover,
-.closeModal:focus {
+.closeModalBtn:hover,
+.closeModalBtn:focus {
     color: #000;
     text-decoration: none
 }
