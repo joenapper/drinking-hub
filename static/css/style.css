@@ -433,7 +433,18 @@ footer {
     margin: 20% auto;
     padding: 2em;
     max-width: 400px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.15)
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.15);
+    animation-name: modalTransition;
+    animation-duration: .3s
+}
+
+@keyframes modalTransition {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .modalContent p {
