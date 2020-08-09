@@ -414,7 +414,59 @@ footer {
     opacity: 1;
 }
 
-/* Pop-up Confirmation ---------------------------------- */
+/* Delete Validation ---------------------------------- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center
+}
+
+.modalContent {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 2em;
+    max-width: 400px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.15)
+}
+
+.modalContent p {
+    margin-top: 0
+}
+
+.closeModal {
+    float: right;
+    color: #ccc;
+    font-size: 2em;
+    margin-top: -1em;
+    cursor: pointer;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+    color: #000;
+    text-decoration: none
+}
+
+.validation a {
+    margin: 0 1em;
+    padding: .3em 1.3em;
+    border-radius: 3px; 
+    background-color: #ccc;
+    color: #000;
+    transition: ease-in-out .2s
+}
+
+.validation a:hover {
+    background-color: #000;
+    color: #fff
+}
 
 /* Cocktail Page ---------------------------------- */
 .backToList {

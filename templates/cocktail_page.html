@@ -27,11 +27,22 @@
             <a class="manageBtn editBtn" href="#">Edit</a>
             <a class="manageBtn deleteBtn" id="delValidation" href="#">Delete</a> 
         </div>
-        
+
         <div class="cocktailLiquors">
             {% for liquor in liquors %}
                 <li>{{ liquor }}</li>
             {% endfor %}
         </div>
     </main>
+    
+    <div id="modalPopup" class="modal">
+        <div class="modalContent">
+            <span class="closeModal">&times;</span>
+            <p>Are you sure you want to delete this cocktail?</p>
+            <div class="validation">
+                <a class="noVal" href="#">No</a>
+                <a class="yesVal" href="#">Yes</a>
+            </div>
+        </div>
+    </div>
 {% endblock %}
