@@ -3,11 +3,7 @@
     <title>{% block title %} - {{drinks.drink_name}} {% endblock %}</title>
 
     <section class="container">
-        <a class="backToList" href="{{url_for('get_drinks')}}">Back To List</a>
-        <div class="manage">
-            <a class="manageBtn editBtn" href="#">Edit</a>
-            <a class="manageBtn deleteBtn" id="delValidation" href="#">Delete</a> 
-        </div>
+        <a class="backToList" href="{{url_for('get_drinks')}}">Back To List</a>  
     </section>
 
     <main class="container">
@@ -26,6 +22,12 @@
                 <p>{{ drinks.notes }}</p>
             </div>
         </div>
+
+        <div class="manage">
+            <a class="manageBtn editBtn" href="#">Edit</a>
+            <a class="manageBtn deleteBtn" id="delValidation" href="#">Delete</a> 
+        </div>
+        
         <div class="cocktailLiquors">
             {% for liquor in liquors %}
                 <li>{{ liquor }}</li>
