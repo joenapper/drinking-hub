@@ -306,7 +306,6 @@ footer {
 }
 
 .hr {
-   
     height: 1px;
     background-color: #2474D2
 }
@@ -348,8 +347,6 @@ footer {
 }
 
 .cardTop {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     background-color: #F4F4F4 
 }
 
@@ -357,10 +354,6 @@ footer {
     height: 300px;
     width: 100%;
     float: left;
-}
-
-.drinkName {
-    /* text-align: center */
 }
 
 .card h3 {
@@ -378,11 +371,8 @@ footer {
     text-align: left;
 }
 
-
-
 .viewMore {
     padding: 1em 0;
-    /* text-align: left */
 }
 
 .viewMore a {
@@ -399,12 +389,9 @@ footer {
 
 .drinkLiquors {
     padding: 0;
-    /* display: grid; */
     width: 90%;
     margin: 0 auto;
     margin-bottom: 1em;
-    /* grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1em  */
 }
 
 .drinkLiquors li {
@@ -596,7 +583,6 @@ footer {
     outline: none;
     border: none;
     border-bottom: 1px solid #2474D2;
-    /* color: #2474D2; */
     margin-bottom: 2em; 
     font-size: 1.2em;
     font-family: Saira, sans-serif;
