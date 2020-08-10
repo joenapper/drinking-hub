@@ -298,6 +298,31 @@ footer {
     cursor: pointer;
 }
 
+/* Pagination ---------------------------------- */
+
+.hr {
+   
+    height: 1px;
+    background-color: #2474D2
+}
+
+.pagination {
+    display: flex;
+    text-align: center;
+    justify-content: space-between
+}
+
+.pagination ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0
+}
+
+.pagination ul li {
+    margin: 0 1em
+}
+
 /* Liquors ---------------------------------- */
 .row {
     width: 100%;

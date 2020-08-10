@@ -13,6 +13,23 @@
         </form>
     </section>
 
+<section class="container">
+    <div class="container">
+    <div class="hr"></div>
+    <div class="pagination">
+        <!-- Previous -->
+        <a href="{{ url_for('get_drinks', current_page=current_page-1) }}">Prev</a>
+        <!-- Page Numbers -->
+        <ul>
+            <li><a>Current Page</a></li>
+        </ul>
+        <!-- Next -->
+        <a href="{{ url_for('get_drinks', current_page=current_page+1) }}">Next</a>
+    </div>
+    
+    </div>
+</section>
+
     <main class="container">
         <div class="row">
             {% for drink in drinks %}
