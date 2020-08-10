@@ -8,6 +8,7 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log('success', response);
+            alert('Message Sent! We Aim To Get a Response Back To You Within The Next 24 Hours');
         },
         function(error) {
             console.log('failed', error);
