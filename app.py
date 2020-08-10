@@ -35,9 +35,13 @@ def get_drinks():
     first_result_num = x - drinks_per_page + 1
     last_result_num = x if x < total_drinks else total_drinks
 
-    return render_template('drinks.html', drinks=drinks, liquors=liquors, current_page=current_page, pages=num_pages, first_result_num=first_result_num,
+    return render_template('drinks.html',
+                           drinks=drinks,
+                           liquors=liquors,
+                           current_page=current_page,
+                           pages=num_pages,
+                           first_result_num=first_result_num,
                            last_result_num=last_result_num,)
-
 
 
 @app.route("/find_cocktails")
@@ -47,9 +51,9 @@ def find_cocktails():
     search = search_term
     no_of_docs = mongo.db.recipes.count_documents(
         {"liquors": {"$regex": query}})
-    return render_template(
-        "searched.html",
-        search=search_term, no_of_docs=no_of_docs)
+    return render_template("searched.html",
+                           search=search_term,
+                           no_of_docs=no_of_docs)
 
 
 @app.route('/display_cocktail/<drink_id>')
@@ -57,12 +61,16 @@ def display_cocktail(drink_id):
     drinks = mongo.db.drinks.find_one({"_id": ObjectId(drink_id)})
     ingredients = drinks["ingredients"].split(",")
     liquors = drinks['liquors'].split(",")
-    return render_template('cocktail_page.html', drinks=drinks, ingredients=ingredients, liquors=liquors)
+    return render_template('cocktail_page.html',
+                           drinks=drinks,
+                           ingredients=ingredients,
+                           liquors=liquors)
 
 
 @app.route('/add_cocktail')
 def add_cocktail():
-    return render_template('add_cocktail.html', liquors=mongo.db.liquors.find())
+    return render_template('add_cocktail.html',
+                           liquors=mongo.db.liquors.find())
 
 
 @app.route('/insert_cocktail', methods=['POST'])
@@ -77,14 +85,17 @@ def edit_cocktail(drink_id):
     drinks = mongo.db.drinks.find_one({"_id": ObjectId(drink_id)})
     ingredients = drinks["ingredients"].split(",")
     liquors = drinks['liquors'].split(",")
-    return render_template('edit_cocktail.html', drinks=drinks, ingredients=ingredients, liquors=liquors)
+    return render_template('edit_cocktail.html',
+                           drinks=drinks,
+                           ingredients=ingredients,
+                           liquors=liquors)
 
 
 @app.route('/update_cocktail/<drink_id>', methods=['POST'])
 def update_cocktail(drink_id):
     drinks = mongo.db.drinks
     drinks.update({'_id': ObjectId(drink_id)},
-    {
+                  {
         'liquors': request.form.get('liquors'),
         'name': request.form.get('name'),
         'image': request.form.get('image'),
