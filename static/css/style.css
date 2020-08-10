@@ -103,7 +103,7 @@ nav a {
 }
 
 /*Navbar Hamburger Menu - Activates when nav links can't fit on the same line*/
-@media screen and (max-width:768px) {
+@media screen and (max-width:650px) {
     .nav-links li {
         padding: 0;
         opacity: 0;
