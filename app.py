@@ -133,6 +133,11 @@ def contact():
     return render_template('contact.html')
 
 
+@app.route('/privacypolicy')
+def privacy_policy():
+    return render_template('priv-pol.html')
+
+
 # Host,Port and Debug set
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
