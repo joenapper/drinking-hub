@@ -52,4 +52,14 @@
             {% endfor %}
         </div>
     </main>
+
+    <section class="container">
+        <div class="container">
+            {% include 'pagination.html' %}
+            <div class="hr"></div>
+            <div class="paginationTitle">
+                Showing {{first_result_num}} - {{last_result_num}} of {{drinks.count()}} results
+            </div>
+        </div>
+    </section>
 {% endblock %}
