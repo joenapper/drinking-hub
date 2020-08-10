@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
+    <!-- EmailJS API -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    
     <!-- Contact -->
     <section class="container">
         <h2>Contact</h2>
         <p>Hey Guys,</p>
         <p>Do you want to reach out to The Drinking Hub team? We would love to hear from you on any matters regarding our site. Use the contact form or one of the email address' below.</p>
-        <form class="contactForm">
+        <form class="contactForm" onsubmit="return sendMail(this);">
             <input type="text" name="name" id="name" placeholder="Name" required>
             <input type="email" name="email" id="email" placeholder="Email" required>
             <textarea id="overview" name="project" placeholder="How can we help you?" cols="1" rows="1" required></textarea>
@@ -19,4 +22,8 @@
         </div>
     </section>
     <!-- End -->
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='js/secret-email.js')}}"></script>
+    <script src="{{url_for('static', filename='js/email.js')}}"></script>
 {% endblock %}
