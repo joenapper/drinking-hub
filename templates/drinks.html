@@ -21,7 +21,13 @@
         <a href="{{ url_for('get_drinks', current_page=current_page-1) }}">Prev</a>
         <!-- Page Numbers -->
         <ul>
-            <li><a>Current Page</a></li>
+            {% for page_number in pages %}
+                {% if page_number == current_page %}
+                <li><a>{{ page_number }}</a></li>
+                {% else %}
+                <li><a href="{{ url_for('get_drinks', current_page=page_number) }}">{{ page_number }}</a></li>
+                {% endif %}
+            {% endfor %}
         </ul>
         <!-- Next -->
         <a href="{{ url_for('get_drinks', current_page=current_page+1) }}">Next</a>
