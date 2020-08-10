@@ -16,3 +16,20 @@ function sendMail(contactForm) {
     );
     return false;
 };
+
+// Clears Form
+const nameClear = document.getElementById('name');
+const emailClear = document.getElementById('email');
+const textareaClear = document.querySelector('textarea');
+const submitButton = document.getElementById('submit-btn');
+
+submitButton.addEventListener('click', resetForm);
+
+function resetForm() {
+    // Reset Textarea
+    setTimeout(() => {
+        nameClear.value = '';
+        emailClear.value = '';
+        textareaClear.value = '';
+    }, 100);
+};
