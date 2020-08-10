@@ -695,3 +695,7 @@ footer {
     outline: none;
     border: none
 }
+
+.contact-details {
+    width: 50%
+}
