@@ -128,6 +128,11 @@ def delete_cocktail(drink_id):
     return redirect(url_for('get_drinks'))
 
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+
 # Host,Port and Debug set
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
