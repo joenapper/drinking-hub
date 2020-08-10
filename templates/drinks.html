@@ -18,7 +18,11 @@
     <div class="hr"></div>
     <div class="pagination">
         <!-- Previous -->
+        {% if current_page | int > 1 %}
         <a href="{{ url_for('get_drinks', current_page=current_page-1) }}">Prev</a>
+        {% else %}
+        <a>Prev</a>     
+        {% endif %}
         <!-- Page Numbers -->
         <ul>
             {% for page_number in pages %}
@@ -30,7 +34,11 @@
             {% endfor %}
         </ul>
         <!-- Next -->
+        {% if current_page | int < pages | count | int %}
         <a href="{{ url_for('get_drinks', current_page=current_page+1) }}">Next</a>
+        {% else %}
+        <a>Next</a>
+        {% endif %}
     </div>
     
     </div>

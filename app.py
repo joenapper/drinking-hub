@@ -1,3 +1,4 @@
+import math
 import os
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
@@ -22,8 +23,20 @@ def home():
 @app.route('/get_drinks')
 def get_drinks():
     liquors = mongo.db.liquors.find()
-    drinks = mongo.db.drinks.find().sort('_id', -1)
-    return render_template('drinks.html', drinks=drinks, liquors=liquors)
+    current_page = int(request.args.get('current_page', 1))
+    total_drinks = mongo.db.drinks.count()
+    drinks_per_page = 9
+    num_pages = range(1, int(math.ceil(total_drinks / drinks_per_page)) + 1)
+    drinks = mongo.db.drinks.find().sort('_id', -1).skip(
+        (current_page - 1) * drinks_per_page).limit(drinks_per_page)
+
+    x = current_page * drinks_per_page
+    first_result_num = x - drinks_per_page + 1
+    last_result_num = x if x < total_drinks else total_drinks
+
+    return render_template('drinks.html', drinks=drinks, liquors=liquors, current_page=current_page, pages=num_pages, first_result_num=first_result_num,
+                           last_result_num=last_result_num,)
+
 
 
 @app.route("/find_cocktails")
