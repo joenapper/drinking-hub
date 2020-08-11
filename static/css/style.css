@@ -703,6 +703,7 @@ footer {
 /* Media Queries ------------------------------------------------------- */
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 1024px) {
+    /* Index */
     nav,
     footer {
         width: 80%;
@@ -717,10 +718,20 @@ footer {
     #liquorCategories {
         grid-template-columns: repeat(4, 1fr)
     }
+
+    /* All cocktails */
+    .row {
+        grid-gap: 1em
+    }
+
+    .drinkImage {
+        height: 175px;
+    }
 }
 
 /*Mobile*/
 @media screen and (max-width: 767px) {
+    /* Index */
     nav,
     footer {
         width: 80%;
@@ -758,5 +769,16 @@ footer {
         padding-right: 1em
     }
 
-    
+    /* All cocktails */
+    .searchBtn button {
+        padding: .8em 1.5em
+    }
+
+    .paginationTitle {
+        font-size: 1.2em
+    }
+
+    .row {
+        grid-template-columns: repeat(1, 1fr)
+    }
 }
