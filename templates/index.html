@@ -19,7 +19,7 @@
     <section class="container">
         <div id="liquorCategories">
             {% for liquor in liquors %}
-                <p class="category">{{ liquor.liquor_name }}</p>
+                <a href="/find_cocktails?search={{ liquor.liquor_name }}"><p class="category">{{ liquor.liquor_name }}</p></a>
             {% endfor %}
         </div>
     </section>
