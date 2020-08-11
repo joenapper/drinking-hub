@@ -35,6 +35,10 @@ a {
     color: #2474D2;
 }
 
+.deskNone {
+    display: none
+}
+
 /* Header ---------------------------------- */
 header {
     width: 100%;
@@ -523,7 +527,7 @@ footer {
     margin: 0;
 }
 
-.cocktailIngredients h4 {
+.cocktailHeader {
     margin-bottom: .5em;
     color: #2474D2;
     font-size: 1.2em
@@ -727,6 +731,28 @@ footer {
     .drinkImage {
         height: 175px;
     }
+
+    /* Cocktail page */
+    .backToList {
+        padding: 1em    
+    }
+
+    .cocktailImage {
+        width: 300px;
+        height: 300px;
+    }
+
+    .mobNone {
+        display: none
+    }
+
+    .deskNone {
+        display: block
+    }
+
+    .manageBtn {
+        padding: .7em 1.4em
+    }
 }
 
 /*Mobile*/
@@ -780,5 +806,31 @@ footer {
 
     .row {
         grid-template-columns: repeat(1, 1fr)
+    }
+
+    /* Cocktail page */
+    .backToList {
+        padding: .8em 1em    
+    }
+
+    .cocktailName {
+        font-size: 2em
+    }
+
+    .cocktailTop {
+        display: block
+    }
+
+    .cocktailImage {
+        width: 300px;
+        height: 300px;
+    }
+
+    .cocktailIngredients {
+        padding-left: 0
+    }
+
+    .manageBtn {
+        padding: .8em 1em
     }
 }

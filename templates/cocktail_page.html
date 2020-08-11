@@ -7,21 +7,24 @@
     </section>
 
     <main class="container">
-        <h2>{{drinks.name}}</h2>
+        <h2 class="cocktailName">{{drinks.name}}</h2>
         <div class="cocktailTop">
             <div>
                 <img class="cocktailImage" src="{{drinks.image}}" alt="{{drinks.drink_name}}">
             </div>
             <div class="cocktailIngredients">
-                <h4>Ingredients</h4>
+                <h4 class="cocktailHeader">Ingredients</h4>
                 <!-- {{drinks.ingredients}} -->
                 {% for ingredient in ingredients %}
                     <li><p><span class="col">&gt;</span> {{ ingredient }}</p></li>
                 {% endfor %} 
-                <h4>How to make:</h4>
-                <p>{{ drinks.notes }}</p>
+                <h4 class="cocktailHeader mobNone">How to make:</h4>
+                <p class="mobNone">{{ drinks.notes }}</p>
             </div>
         </div>
+
+        <h4 class="cocktailHeader deskNone">How to make:</h4>
+        <p class="deskNone">{{ drinks.notes }}</p>
 
         <div class="manage">
             <a class="manageBtn editBtn" href="#">Edit</a>
