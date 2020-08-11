@@ -70,4 +70,46 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
     - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
+- ### Libraries Used
+    1. [Google Fonts:](https://fonts.google.com/)
+        - Google fonts was used to import the 'Saira' font into the 'style.css' file which is used on all pages throughout the project.
+    2. [Flask:](https://palletsprojects.com/p/flask/)
+        - Flask is the micro web framework that runs the application.
+    3. [PyMongo:](https://pymongo.readthedocs.io/en/stable/)
+        - PyMongo was used to enable the python application to access the Mongo database.
+    4. [Jinja:](https://jinja.palletsprojects.com/en/2.11.x/)
+        - Jinja is the default templating language for flask and is used to display data from the python application in the frontend html pages
+
+- ### Tools Used
+    1. [Figma:](https://www.figma.com/)
+        - Figma was used to create the wireframes during the design process.
+    2. [MongoDB Atlas:](https://www.mongodb.com/)
+        - MongoDB Atlas is the database used.
+    3. [MongoDB Compass:](https://www.mongodb.com/)
+        - MongoDB Compass is an app that allowed me to access the database directly and perform CRUD operations separate to the project.
+    4. [Git:](https://git-scm.com/)
+        - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+    5. [Gitpod:](https://www.gitpod.io/)
+        - Gitpod was the IDE used throughout the entirety of the project. 
+    6. [GitHub:](https://github.com/)
+        - GitHub is used to store the project's code after being pushed from Git.
+    7. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
+        - Photoshop was used to create 'README-assets' images. 
+    8. [Web Formatter:](https://webformatter.com/)
+        - Web Formatter was used to beautify code to keep everything neat and improve readability. 
+        - This can also be done by utilizing Beautify Cmd (Shift + Alt + F) in GitPod.
+    9. [Grammarly:](https://app.grammarly.com/)
+        - Grammarly was used at the end to correct any spelling/grammar mistakes. 
+    10. [Jasmine:](https://jasmine.github.io/)
+        - Jasmine was used to test the JavaScript before Implementing It into the website.
+    11. [EmailJS:](https://www.emailjs.com/)
+        - The EmailJS API was used to allow users to contact site admin on bug fixes or any general enquiries. 
+
+- ### Hosting
+    1. [Heroku:](https://www.heroku.com/)
+        - Heroku was used to deploy the final version of the site.
+    
+
+
+
 
