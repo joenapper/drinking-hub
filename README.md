@@ -154,3 +154,14 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
         - If any issues or bugs are found in the site, the user can fill out the contact form (link in the footer) which will send there message to the admin of the site. Alternatively, two other emails are provided in case, for whatever reason, the form goes down. Not only that, but the email addresses are acually clickable and will automatically bring up an email form to make sending an email faster and easier.
     2. I want to see continual growth of the database and more recipes.
         - As stated before, the website automatically shows the newest added cocktails so new drinks can always be easily seen. At the top of the cocktails page, theirs also a counter which shows how many drinks in total. For example "Showing 1-9 of 27 Results". This will update everytime a drink is added, showing the user how many drinks in total their is.
+
+- ### CRUD Testing
+    1. Create
+        - I tested the create functionality of website by using the 'Add My Own' form. I tried to replicate recipes that i already had in the database, which were added in MongoDB, and them check to see all the information was displaying in the same way. 
+    2. Read
+        - The read functionality was testing using for loops to display all the cocktails in the database and then from there, all the ingredients and information for each cocktail. This was made more aesthetically pleasing using CSS and displayed in a more professional manner. On the main page, i only displayed the cocktail name, image and liquors that were in the cocktail so i could display more on the page. If the user wanted to read more about a cocktail, they can click the 'View Cocktail' button, and all the information will be displayed. 
+    3. Update
+        - The update functionality was tested by adding a 'Edit' button to each cocktail page. I would deliberately add a new cocktail with a spelling mistake and then use the edit button to correct the mistake. I would then go back to the cocktail page and make sure the changes were successful.
+    4. Delete
+        - The delete functionality was tested by adding clones of a recipe to the database and then using the delete button to make sure the recipes were deleting. I used duplicate cocktails to make sure i wasnt deleting any valuable information from the database. There is also a validation step to the delete process where the user has to to click that they are sure they want to delete. I did this just to make sure the user didnt click the botton by accident and end up deleting something that they didnt want to.
+
