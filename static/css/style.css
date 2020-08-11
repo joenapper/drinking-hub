@@ -723,6 +723,10 @@ footer {
         grid-template-columns: repeat(4, 1fr)
     }
 
+    h2 {
+        font-size: 2em
+    }
+
     /* All cocktails */
     .row {
         grid-gap: 1em
@@ -753,6 +757,17 @@ footer {
     .manageBtn {
         padding: .7em 1.4em
     }
+
+    /* Add cocktail */ 
+    .addCocktailForm input,
+    .addCocktailForm textarea {
+        height: 2.5em;
+    }
+
+    .addCocktailForm button {
+        height: 80px;
+        margin-left: 70%
+    }
 }
 
 /*Mobile*/
@@ -767,6 +782,10 @@ footer {
     .container {
         width: 80%;
         margin: 4em auto
+    }
+
+    h2 {
+        font-size: 1.75em
     }
 
     .websiteLogo {
@@ -833,4 +852,37 @@ footer {
     .manageBtn {
         padding: .8em 1em
     }
+
+    /* Add cocktail */ 
+    .addCocktailForm input,
+    .addCocktailForm textarea {
+        height: 2em;
+    }
+
+    .addCocktailForm label {
+        font-size: 1em
+    }
+
+    .addCocktailForm button {
+        font-size: 1em;
+        margin-left: 50%;
+        margin-top: 0;
+        max-width: 50%;
+    }
+
+    .addCocktailForm ::-webkit-input-placeholder {
+        font-size: .55em;
+    }
+
+    .addCocktailForm :-ms-input-placeholder {
+        font-size: .55em;
+    }
+    .addCocktailForm ::-moz-placeholder {
+        font-size: .55em;
+    }
+
+    .addCocktailForm :-moz-placeholder {
+        font-size: .55em;
+    }
+
 }
