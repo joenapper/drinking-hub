@@ -165,3 +165,9 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     4. Delete
         - The delete functionality was tested by adding clones of a recipe to the database and then using the delete button to make sure the recipes were deleting. I used duplicate cocktails to make sure i wasnt deleting any valuable information from the database. There is also a validation step to the delete process where the user has to to click that they are sure they want to delete. I did this just to make sure the user didnt click the botton by accident and end up deleting something that they didnt want to.
 
+- ### Further Testing
+    - The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, and Safari browsers. 
+    - The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy S10, iPhone 6s & iPhone X.
+    - A large amount of testing was done to ensure that everything rendered and linked correctly on all browsers and a wide variety of devices.
+    - All JavaScript code was tested in a separate workspace using Jasmine before importing into the project. 
+    - Friends and Family members were asked to review the site and report feedback on any bugs and/or user experience issues/negative experiences.
