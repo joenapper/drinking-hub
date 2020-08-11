@@ -165,6 +165,9 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     4. Delete
         - The delete functionality was tested by adding clones of a recipe to the database and then using the delete button to make sure the recipes were deleting. I used duplicate cocktails to make sure i wasnt deleting any valuable information from the database. There is also a validation step to the delete process where the user has to to click that they are sure they want to delete. I did this just to make sure the user didnt click the botton by accident and end up deleting something that they didnt want to.
 
+- ### Bug issues
+    - From the start of the project i was having a lot of trouble using arrays from within the MongoDB. I could easily iterate through the data and have it display how i wanted but the problem came when i was trying to add recipes from the form within the website. I'll use the ingredients for exmaple: 50ml of Vodka. So when trying to add this ingredient to the ingredients array... instead of it going into the database as '50ml of Vodka', each letter would display in its own line (i.e. '5' '0' 'm' 'l'..). Because of this bug, I instead listed all the ingredients inside a 'string' and used the .split() method to show each ingredient on it own line. 
+
 - ### Further Testing
     - The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, and Safari browsers. 
     - The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy S10, iPhone 6s & iPhone X.
