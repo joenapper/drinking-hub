@@ -36,3 +36,17 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
         To conclude, the color scheme is implemented to create a professional, elegant looking site with great visual representations - contrasting typography
         and striking imagery.
 
+    - #### Layout
+        - Throughout the site I maintained a consistent layout through connecting pages and took advantage of multiple CSS classes to enforce the same design principle
+        on other pages and reduce the amount of code needed. Doing this also made the source code cleaner, easier to read and will allow for easy maintainance (if and
+        when is necessary). To create my layout I used CCS grid and flexbox properties.
+            - [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout): Grid layout was used mainly on the landing page to equally position
+            all the images which are labelled and link to a specific drink/recipe. The use of this made easy work of perfectly lining up all the images whilst also
+            maintaining some responsiveness. I could them simply target the grid layout for smaller screen sizes adjust the sizes to suit.
+            - [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox): Flexbox was used primarily for stagering
+            sections where there is a lot of text. Breaking up sections by stagering images and text actually improves user readability and creates a better
+            overall look.
+        The use of these features allowed for great responsive design. Using the google developer tools I could keep checking how response each section was and keep working
+        on each area untill I was happy. I had also pre-planned a lot of the interactive features so that I knew how they would function on all screen sizes. For example, the
+        navigation bar which collapses into a 'hamburger' menu on mobile and animates smoothly on open and close.
+
