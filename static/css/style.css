@@ -768,6 +768,11 @@ footer {
         height: 80px;
         margin-left: 70%
     }
+
+    /* Contact page */
+    .contactForm button {
+        margin-left: 70%;
+    }
 }
 
 /*Mobile*/
@@ -885,4 +890,14 @@ footer {
         font-size: .55em;
     }
 
+    /* Contact page */
+    .contactForm button {
+        margin-left: 50%;
+        max-width: 50%;
+        font-size: 1em
+    }
+
+    .contact-details {
+        width: 60%;
+    }
 }
