@@ -58,3 +58,7 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
         the 'style.css' directory, where I could then easily implement it into my work. Although google is an extremely reliable external source, I added a fallback
         of sans-serif just in case, for whatever reason, the font doesnt get imported correctly.
 
+## Features
+
+**Note:** All Features Information can be located in the separate [FEATURES.md](https://github.com/joenapper/drinking-hub/blob/master/FEATURES.md) due to the length of content.
+
