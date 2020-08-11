@@ -62,3 +62,12 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
 
 **Note:** All Features Information can be located in the separate [FEATURES.md](https://github.com/joenapper/drinking-hub/blob/master/FEATURES.md) due to the length of content.
 
+## Technologies Used
+
+- ### Languages Used
+    - [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+    - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+
