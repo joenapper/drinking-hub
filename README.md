@@ -3,7 +3,7 @@
 The Drinking Hub is a drinking database for users to discover recipes for cocktails. Not only will visitors be able to browse recipes for drinks, but also share their own.
   
 <h2 align="center"><img src="README-assets/drinkHubBanner.png"></h2>
-<h2 align="center"><a href="#">Click HERE For The Live Site</a></h2>
+<h2 align="center"><a href="https://drinking-hub.herokuapp.com/">Click HERE For The Live Site</a></h2>
 
 ## User Experience (UX)
 
@@ -174,3 +174,5 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     - A large amount of testing was done to ensure that everything rendered and linked correctly on all browsers and a wide variety of devices.
     - All JavaScript code was tested in a separate workspace using Jasmine before importing into the project. 
     - Friends and Family members were asked to review the site and report feedback on any bugs and/or user experience issues/negative experiences.
+
+    
