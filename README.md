@@ -11,8 +11,8 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     - #### First Time Visitor Goals
         1. As a First Time Visitor, I want to easily find recipes for the drinks I like.
         2. Also, I want to find the ingredients and method for making the cocktail.
-        4. Also, I want to easily post my recipe ideas and showcase them to other users.
-        3. Also, I want to easily navigate through the site and always have a way of moving to another section.
+        3. Also, I want to easily post my recipe ideas and showcase them to other users.
+        4. Also, I want to easily navigate through the site and always have a way of moving to another section.
 
     - #### Returning Visitor Goals
         1. As a Returning Visitor, I want to see new recipes that I can try.
@@ -108,8 +108,49 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
 - ### Hosting
     1. [Heroku:](https://www.heroku.com/)
         - Heroku was used to deploy the final version of the site.
-    
 
+## Testing
 
+- ### Code Validation
+    - #### HTML
+        - [W3C HTML Validator](https://validator.w3.org/)
+            - All HTML was passed through the HTML validator. Outside of errors thrown due to using the Jinja templating language, which are unavoidable given the nature of the project, everything came back fine.
 
+    - #### CSS
+        - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+            - The W3C CSS Validator was used to validate the CSS page to ensure there were no syntax errors in the document.
 
+    - #### JavaScript
+        - [JSHint](https://jshint.com/)
+            - The JavaScript files were run through JSHINT and apart from a few missed semicolons (which were rectified), no errors displayed.
+
+    - #### JavaScript
+        - [Python](http://pep8online.com/)
+            - The Python script was checked using pep8online and is fully PEP8 compliant with zero errors or warnings.
+
+- ### Testing User Stories from User Experience (UX) Section
+
+- #### First Time Visitor Goals
+    As a First Time Visitor...
+    1. I want to easily find recipes for the drinks I like.
+        - On the home page theirs a search bar that allows the user to search for drinks that contain a specific liquor. For example... if the user searches 'Vodka'.
+    2. I want to find the ingredients and method for making the cocktail.
+        - Each cocktail from the home page has a 'View Cocktail' button. If the user likes the look or sound of a drink, they can click this button and it will open a page displaying more information about that specific cocktail, including the ingredients and how to make the drink.
+    3. I want to easily post my recipe ideas and showcase them to other users.
+        - As a user, adding my own cocktail is the easiest part of the site. In the navbar theirs a 'Add your own' link which takes you to a form. Here you can add your own cocktail with ingredients, how to make and even your own image. After your recipe is submitted, the user is redirected to the main page were they can see their newly added cocktail at the top of the page. Giving confirmation to the user that their drink has actually been published.
+    4. I want to easily navigate through the site and always have a way of moving to another section.
+        - The main landing page, add cocktail page and pages which show more information about each cockail, are pages that arent too long, therfor dont allow the user to get trapped as the navbar is always in vision. The navbar allows the user to easily navigate to a desired part of the website and even in smaller screen sizes, transforms into a dropdown menu meaning its always accessable. On main content pages were the list of cocktails is displayed, i used pagination to only show a certain amount of recipes per page, thus cutting down the amount of scrolling for the user. Not only that but i added a 'Back to Top' button at the bottom of the document just to make the site even easier to navigate and avoid any negative experiences.
+
+- #### Returning Visitor Goals
+    As a Returning Visitor...
+    1. I want to see new recipes that I can try.
+        - The list of cocktails has been sorted so that the newest added recipes appear at the top, meaning the user will always see the most recently added first.
+    2. I want to easily edit or remove my own recipes depending on popularity.
+        - As a user, if i feel like my recipe no longer works or i have found a way to improve it, i can easily edit or delete my recipe using the manage buttons that appear on the main page of each cocktail. If the user wants to delete the recipe, they can click the delete button which will show a disclaimer asking if they are sure. If no is selected, the popup will close, If yes is selected, the drink will be deleted and the user will be returned to the main page. If the edit button is selected, the user will be redirected to a similar form to the 'Add to your' except all the information will already to filled out. Here the user can confirm any changed or simply cancel. 
+
+- #### Frequent User Goals
+    As a Frequent User...
+    1. I want to easily contact the admins of the site if I see any issues or bugs.
+        - If any issues or bugs are found in the site, the user can fill out the contact form (link in the footer) which will send there message to the admin of the site. Alternatively, two other emails are provided in case, for whatever reason, the form goes down. Not only that, but the email addresses are acually clickable and will automatically bring up an email form to make sending an email faster and easier.
+    2. I want to see continual growth of the database and more recipes.
+        - As stated before, the website automatically shows the newest added cocktails so new drinks can always be easily seen. At the top of the cocktails page, theirs also a counter which shows how many drinks in total. For example "Showing 1-9 of 27 Results". This will update everytime a drink is added, showing the user how many drinks in total their is.
