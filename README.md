@@ -50,3 +50,11 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
         on each area untill I was happy. I had also pre-planned a lot of the interactive features so that I knew how they would function on all screen sizes. For example, the
         navigation bar which collapses into a 'hamburger' menu on mobile and animates smoothly on open and close.
 
+    - #### Typography
+        - I used [Google Fonts](https://fonts.google.com/) to import the [Saira](https://fonts.google.com/specimen/Saira?query=saira) font which was set as the base
+        font-family for the website. I decided to stick with the one font as I really liked the impact it had on the site. Saira, is a highly professional looking
+        font and looks great in any size, color, case and symbol. The font is available in 9 different weights from 'Thin' (100 weight) to 'Black' (900 weight).
+        I took advantage of the font-weight property to help distinguish paragraphs from more important headers and titles. The font was imported from Google Fonts to
+        the 'style.css' directory, where I could then easily implement it into my work. Although google is an extremely reliable external source, I added a fallback
+        of sans-serif just in case, for whatever reason, the font doesnt get imported correctly.
+
