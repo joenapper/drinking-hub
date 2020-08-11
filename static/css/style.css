@@ -699,3 +699,64 @@ footer {
 .contact-details {
     width: 50%
 }
+
+/* Media Queries ------------------------------------------------------- */
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav,
+    footer {
+        width: 80%;
+        padding: 0 10%
+    }
+
+    .container {
+        width: 80%;
+        margin: 4em auto
+    }
+
+    #liquorCategories {
+        grid-template-columns: repeat(4, 1fr)
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+    nav,
+    footer {
+        width: 80%;
+        padding: 0 10%
+    }
+
+    .container {
+        width: 80%;
+        margin: 4em auto
+    }
+
+    .websiteLogo {
+        height: 40px;
+        widows: 40px
+    }
+
+    #welcomeText {
+        font-size: 1.5em
+    }
+
+    #about {
+        padding: 1em
+    }
+
+    #about p {
+        font-size: 1em;
+        padding: 0
+    }
+
+    #liquorCategories {
+        display: none
+    }
+
+    .footerLeft a {
+        padding-right: 1em
+    }
+
+    
+}
