@@ -15,7 +15,7 @@ function sendMail(contactForm) {
         }
     );
     return false;
-};
+}
 
 // Clears Form
 const nameClear = document.getElementById('name');
@@ -32,4 +32,4 @@ function resetForm() {
         emailClear.value = '';
         textareaClear.value = '';
     }, 100);
-};
+}

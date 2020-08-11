@@ -12,20 +12,20 @@ function navSlide() {
         // Burger Animation
         burger.classList.toggle('burger-toggle');
     });
-};
+}
 
 // Links Slide In
 function linkSlide() {
     navLinks.forEach((link, index) => {
         if(link.style.animation) {
-            link.style.animation = ''
+            link.style.animation = '';
         } else {
             link.style.animation = `navLinkFade 1.0s ease forwards ${index / 5 + 0.4}s`;
-        };
+        }
     });
-}; 
+}
 
-navSlide()
+navSlide();
 
 
 // Delete Validation Pop up
@@ -45,11 +45,11 @@ function openModal() {
 }
 // When either the 'No' or 'X' buttons are clicked, the pop up will close 
 function closeModal() {
-    modal.style.display = 'none'
+    modal.style.display = 'none';
 }
 // If the user clicks anywhere but the popup, it will automatically close
 function clickOutside(e) {
     if(e.target == modal) {
-        modal.style.display = 'none'
+        modal.style.display = 'none';
     }
 }
