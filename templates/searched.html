@@ -2,7 +2,7 @@
 {% block content %}
     <title>Drinking Hub{% block title %} - Searched {% endblock %}</title>
 
-    <section class="container">
+    <section class="container" id="pageTop">
         <form action="{{url_for('find_cocktails')}}">
             <div class="searchBar">
                 <input type="search" name="search" id="search" placeholder="Search for drinks containing your favourite liquor">
@@ -37,4 +37,8 @@
             {% endfor %}
         </div>
     </main>
+
+    <div class="backToTop">
+        <a href="#pageTop">Back To Top</a>
+    </div>
 {% endblock %}

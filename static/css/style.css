@@ -39,6 +39,10 @@ a {
     display: none
 }
 
+.backToTop {
+    text-align: center;
+}
+
 /* Header ---------------------------------- */
 header {
     width: 100%;
