@@ -21,6 +21,7 @@
             {% for liquor in liquors %}
                 <a href="/find_cocktails?search={{ liquor.liquor_name }}"><p class="category">{{ liquor.liquor_name }}</p></a>
             {% endfor %}
+                <a href="{{url_for('get_drinks')}}"><p class="category">All</p></a>
         </div>
     </section>
     <!-- End -->
