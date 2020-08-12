@@ -16,25 +16,32 @@ app.config["MONGO_URI"] = os.getenv("MONGO_URI")
 mongo = PyMongo(app)
 
 
-# Landing Page
 @app.route('/')
 def home():
+    ''' Landing page:
+    Uses for loop to display liquor categories as links which can be clicked.
+    Clicked links display all the cocktails containing that liquor. '''
     liquors = mongo.db.liquors.find()
+
     return render_template('index.html', liquors=liquors)
 
 
-# Shows all drinks / cocktails
 @app.route('/get_drinks')
 def get_drinks():
+    # Retrieves all drinks / cocktails from the database
     liquors = mongo.db.liquors.find()
+
     # Pagination & display settings
     current_page = int(request.args.get('current_page', 1))
     total_drinks = mongo.db.drinks.count()
     drinks_per_page = 9
     num_pages = range(1, int(math.ceil(total_drinks / drinks_per_page)) + 1)
+
+    # Sort method used to display newly added recipes first
     drinks = mongo.db.drinks.find().sort('_id', -1).skip(
         (current_page - 1) * drinks_per_page).limit(drinks_per_page)
 
+    # Summary - (example) 'showing 1 - 9 of 15 results'
     x = current_page * drinks_per_page
     first_result_num = x - drinks_per_page + 1
     last_result_num = x if x < total_drinks else total_drinks
@@ -48,65 +55,76 @@ def get_drinks():
                            last_result_num=last_result_num,)
 
 
-# Search for recipes with regex method
-# Results of the search returned with the for loop in searched.html
 @app.route('/find_cocktails')
 def find_cocktails():
+    ''' Search for recipes with regex method,
+    results of the search returned with the for loop in searched.html.
+
+    Use of .capitalize() method to make search query case friendly. '''
     query = request.args.get("search").capitalize()
     search_term = mongo.db.drinks.find({"liquors": {"$regex": query}})
     search = search_term
     no_of_docs = mongo.db.recipes.count_documents(
         {"liquors": {"$regex": query}})
+
     return render_template("searched.html",
                            search=search_term,
                            no_of_docs=no_of_docs)
 
 
-# Displays all content for selected cocktail
 @app.route('/display_cocktail/<drink_id>')
 def display_cocktail(drink_id):
+    # Displays all content for selected cocktail
     drinks = mongo.db.drinks.find_one({"_id": ObjectId(drink_id)})
-    # Uses .split() method to display ingredients
+
+    ''' Uses .split() method to display ingredients more attractively.
+    Base of split() method from here:
+    https://www.w3schools.com/python/ref_string_split.asp '''
     ingredients = drinks["ingredients"].split(",")
     liquors = drinks['liquors'].split(",")
+
     return render_template('cocktail_page.html',
                            drinks=drinks,
                            ingredients=ingredients,
                            liquors=liquors)
 
 
-# Add cocktail page
 @app.route('/add_cocktail')
 def add_cocktail():
+    ''' Add new cocktail using a form, submiting it using POST method
+    When the recipe is succesfully added,
+    the user gets redirected to the full list of cocktails. '''
     return render_template('add_cocktail.html',
                            liquors=mongo.db.liquors.find())
 
 
-# Adds new recipe using a form and POST method
 @app.route('/add_cocktail', methods=['POST'])
 def store_cocktail():
     drinks = mongo.db.drinks
     drinks.insert_one(request.form.to_dict())
-    # Redirects user to cocktail list
+
     return redirect(url_for('get_drinks'))
 
 
-# Find the recipe by its ID then render the edit_cocktail.html file
 @app.route('/edit_cocktail/<drink_id>')
 def edit_cocktail(drink_id):
+    # Find the recipe by its ID then render the edit_cocktail.html file
     drinks = mongo.db.drinks.find_one({"_id": ObjectId(drink_id)})
-    # Uses .split() method to display ingredients
+
+    ''' Uses .split() method to display ingredients
+    as discussed in 'display_cocktail' route. '''
     ingredients = drinks["ingredients"].split(",")
     liquors = drinks['liquors'].split(",")
+
     return render_template('edit_cocktail.html',
                            drinks=drinks,
                            ingredients=ingredients,
                            liquors=liquors)
 
 
-# Update the article after editing it using JSON
 @app.route('/update_cocktail/<drink_id>', methods=['POST'])
 def update_cocktail(drink_id):
+    # Updates the article after editing it using JSON
     drinks = mongo.db.drinks
     drinks.update({'_id': ObjectId(drink_id)},
                   {
@@ -116,13 +134,14 @@ def update_cocktail(drink_id):
         'ingredients': request.form.get('ingredients'),
         'notes': request.form.get('notes')
     })
+
     # When the cocktail is updated, redirect the user to the cocktail list
     return redirect(url_for('get_drinks'))
 
 
-# Find a recipe by its ID then remove it from the database
 @app.route('/delete_cocktail/<drink_id>')
 def delete_cocktail(drink_id):
+    # Find a recipe by its ID then remove it from the database
     mongo.db.drinks.remove({'_id': ObjectId(drink_id)})
     # Redirects to cocktail list to confirm deletion to the user
     return redirect(url_for('get_drinks'))
