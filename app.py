@@ -83,8 +83,8 @@ def add_cocktail():
 
 
 # Adds new recipe using a form and POST method
-@app.route('/insert_cocktail', methods=['POST'])
-def insert_cocktail():
+@app.route('/add_cocktail', methods=['POST'])
+def store_cocktail():
     drinks = mongo.db.drinks
     drinks.insert_one(request.form.to_dict())
     # Redirects user to cocktail list
