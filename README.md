@@ -175,4 +175,31 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     - All JavaScript code was tested in a separate workspace using Jasmine before importing into the project. 
     - Friends and Family members were asked to review the site and report feedback on any bugs and/or user experience issues/negative experiences.
 
+## Deployment
+
+- ### Heroku
+    - The site was deployed to [Heroku](https://www.heroku.com/) using the following steps...
+
+- #### GitPod
+    1. I turned off Flask debugging by setting 'debug=False'.
+    2. I created a requirements file with the command 'pip3 freeze --local > requirements.txt'.
+    3. I created the Procfile, using the command 'echo web: python app.py > Procfile'. What tells Heroku to run app.py on start-up.
+        - Alternatively, this can be achieved by creating the 'Procfile' manually and typing in 'web: python app.py'.
+    4. I then logged into heroku using the command line (heroku login).
+    5. Then I then pushed the repository to Heroku using the command 'git push heroku master'.
+    6. Finally, I ran the app using the command 'heroku ps:scale web=1' which tells Heroku to get the site running.
+
+- #### Heroku
+    1. From the Heroku dashboard I created a new app, using the name 'drinking-hub' and set the region to Europe.
+    2. In the settings tab I clicked reveal config vars and entered the required environment variables, which in this case were:
+        - IP: '0.0.0.0'
+        - PORT: '5000'
+        - Mongo_URI: 'mongodb+srv://root:<password_removed>@myfirstcluster-fai9p.mongodb.net/drink_hub?retryWrites=true&w=majority'
+    3. Finally, click the 'open app' button located at the top right of the screen to open the live website.
+
+By completing the above steps I was able to take my code from GitPod and successfully deploy the project to Heroku.
+
+
+
+
     
