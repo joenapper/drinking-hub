@@ -124,7 +124,7 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
         - [JSHint](https://jshint.com/)
             - The JavaScript files were run through JSHINT and apart from a few missed semicolons (which were rectified), no errors displayed.
 
-    - #### JavaScript
+    - #### Python
         - [Python](http://pep8online.com/)
             - The Python script was checked using pep8online and is fully PEP8 compliant with zero errors or warnings.
 
