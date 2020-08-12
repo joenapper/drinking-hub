@@ -50,7 +50,7 @@ def get_drinks():
 
 # Search for recipes with regex method
 # Results of the search returned with the for loop in searched.html
-@app.route("/find_cocktails")
+@app.route('/find_cocktails')
 def find_cocktails():
     query = request.args.get("search").capitalize()
     search_term = mongo.db.drinks.find({"liquors": {"$regex": query}})
