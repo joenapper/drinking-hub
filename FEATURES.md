@@ -65,3 +65,11 @@
     - ##### Manage buttons
         - Edit: Clicking the edit button will redirect to a page very similar to the 'Add Your Own'. The same form to add your own cocktail will be displayed, however all the information will already be filled in corresponding to the specific cocktail the user has chosen to edit. From here the user can easily pin point the mistake that needs to be edited and then simply click the 'Update Cocktail' button. This will then redirect the user to the page where they can see there changes have been made successfully.
         - Delete: Clicking the delete button will prompt a pop up to appear asking the user if theyre sure they want to delete the cocktail. This adds a layer of security and validation incase the user clicks the wrong button and would accidently delete there recipe.
+
+### Add Cocktail
+- ##### Add cocktail form
+    - On the 'Add your own cocktail' page, i have made it very clear to guide users, step by step, through adding there own cocktail recipe. Each input field has its own 'title' which informs the user what information goes where. Not only that, but each text-box has placeholder text, further helping the user. 
+
+    - The form is very easy to read and keeps the same principles on all screen sizes. Each text box takes up 100% of the allowed space (within the body margin) and makes for good readability.
+
+    - The actual 'Add Cocktail' button is clearly located at the end of form and uses the strong blue color to stand out amongst the other content. I also positioned the buttom at the right hand side, staggering it from the title, as it is said to improve readability and make the design look better. After all the information is filled out, the user needs to click this button, which will then redirect them to the full list of cocktails where they can see there newly added recipe at the top, showing the user there recipe has been added successfully.
