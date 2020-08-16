@@ -38,3 +38,30 @@
 
     - On mobile, i decided to remove the buttons as they only looked good if i were to display each button on its own row. This would have been a problem as the user would have to scroll for a while in order to see all the options. Doing things this way, allowed me to keep 100% of the page visable at all times and avoid any bad user ecperience. 
 
+### All Cocktails
+- ##### Search bar
+    - The search bar is located at the top of the page and also remains there when searching to other pages. The placeholder text "Search for drinks containing your favourite liquor" makes it easy for users to understand that if theyre looking for drinks containing, for example, Whiskey, they type in whiskey and it will search for all drinks containing whiskey. This search engine is smart and doesnt need the user to be case sensitive or even spell the word correctly. The most relevant data linked to the search will be displayed. The actual search button is standoff-ish on its own and clearly indicates its purpose (search for the queried liquor). Alternatively, the user can also just press the enter key, which is more commonly used on desktop devices, which will give them the same result.  
+
+    - The search bar will always appear at the top on all varied screen size devices, but adjusted its width according to keep everything looking professional and in-line.
+
+- ##### Pagination
+    - Using pagination, i was able to reduce how far the user needed to scroll to get to the bottom of the page. Instead of showing every single cocktail recipe on the page, the content is split using pagination. So the user can see the total amount of recipes followed by the number of pages. For example, 'Showing 1 - 9 of 26 Results' - so the user can see 9 of the total 26 results. The total number of pages is then listed, which in this case would be 3 pages, each of which would show a new 9 recipes. As-well-as the number of pages, at the left and right of the number of pages, are a 'Prev' and a 'Next' button. This allows the user to easily navigate through the results. 
+
+    - On desktop, the results for each page are displayed in rows of 3 and also line up with the other elements in the body. Each recipe is displayed in a card format - the user can see an image of the cocktail, followed by the name of the cocktail, what liquors it contains and a link to show more information about the cocktail.
+
+    - On tablet, the recipe cards still look good using the same layout because the content of the page uses less margin on the left and right meaning the cards dont get squashed together.
+
+    - On mobile, the results appear 1 at a time which does take up more real estate on the page, however the images for each drink would be too blurred if i had tried to add more than 1 to each row. This way the image quality remains the same and user can easily see what the specific cocktail has to offer.
+
+- ##### Specific cocktail page (i.e: Sex On The Beach)
+    - Clicking 'View Cocktail' on any of the recipes will take the user to that specific drinks page which will show the cocktails ingredients, how to make it and also manage buttons which allow the user to edit that drink, if theirs a missing ingredient, or delete that drink, if its possibly a duplicate or just completely doesnt work.
+
+    - Each ingredient is displayed on its own line next to contasting greater than sign which makes the list easy to read and understand on all screen sizes. On desktop and tablet, the ingredients appear next to the image of the cocktail to reduce any un-necessary scrolling.
+
+    - The 'How to make' information is displayed as a paragraph and takes advantage of the CSS line-height property to make it easier to read on all screen sizes. 
+
+    - For mobile users, all the information is displayed on its own row. Again to maintain the quality of the image, but also keep the content easy to read and visually impacting.
+
+    - ##### Manage buttons
+        - Edit: Clicking the edit button will redirect to a page very similar to the 'Add Your Own'. The same form to add your own cocktail will be displayed, however all the information will already be filled in corresponding to the specific cocktail the user has chosen to edit. From here the user can easily pin point the mistake that needs to be edited and then simply click the 'Update Cocktail' button. This will then redirect the user to the page where they can see there changes have been made successfully.
+        - Delete: Clicking the delete button will prompt a pop up to appear asking the user if theyre sure they want to delete the cocktail. This adds a layer of security and validation incase the user clicks the wrong button and would accidently delete there recipe.
