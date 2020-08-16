@@ -24,4 +24,17 @@
     - The footer is also fully responsive, however, there are no changes as we go down the display sizes as it is not necessary.
 
 ### Home Page (Landing Page)
+- ##### About section
+    - When the site is first opened, the user can see a short paragraph explaining the purpose of the site and also links to the main cocktails page where all the drink recipes are displayed. This information is displayed with a border around it, which catches the attention of the user and makes it more visually inpacting.
+
+    - On tablet and mobile screen sizes, the font-size is changed to look more suited for the intended screen size, as-well-as the width of the box taking up more space on the screen, to display more information without having to scroll down a lot of text, which would cause a bad user experience.
+
+- ##### Liquors section
+    - Under the 'About section', all the liquor types are listed as button links, and it becomes very apparent to the user that if they click on one of the links, they will be re-directed to a page which shows them all the recipes containing that specific liquor. For example, clicking 'Vodka', would show all the cocktails containing Vodka.
+    
+    - On desktop devices, all 8 of these links appear in-line and take up the same width as the above 'About section' which keeps the layout looking professional. If the user hovers over the button, the button changes color and the cursor changes to 'pointer' further adding to their clickability.
+
+    - On tablet, the links appear in 2 rows of 4 with equal margin between each of them and continue to follow a consistent overall width down the entire page.
+
+    - On mobile, i decided to remove the buttons as they only looked good if i were to display each button on its own row. This would have been a problem as the user would have to scroll for a while in order to see all the options. Doing things this way, allowed me to keep 100% of the page visable at all times and avoid any bad user ecperience. 
 
