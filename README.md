@@ -199,7 +199,20 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
 
 By completing the above steps I was able to take my code from GitPod and successfully deploy the project to Heroku.
 
+- ### Local Deployment
 
+The following instructions are based on the user running GitPod on Windows 10. If your IDE / OS is different, your commands may differ slightly, but the process remains the same.
+
+As a minimum you will need Python 3 installed on your machine. You will also need PIP which comes preinstalled with Python versions 3.4 and later. Having a Github account is also necessary.
+
+To deploy locally on your own machine, follow these steps:
+- Open the add on / extenstions tab in your browser and search for GitPod. The very first result should be the correct extension - click on the result, confirm and 'Add' to your browser.
+- Head over to 'https://github.com/joenapper/drinking-hub' and click the green 'GitPod' button (added from the add on / extension). This should open the code in GitPod.
+- Install any required modules using the 'pip3 install -r requirements.txt' command in the terminal.
+- Within the file app.py change the line app.config["MONGO_DBNAME"] = os.getenv("MONGO_DBNAME") to app.config["MONGO_DBNAME"] = os.getenv("MONGO_DBNAME", '<your_database_name>) where <your_database_name> is the name of the database.
+- Also change app.config["MONGO_URI"] = os.getenv('MONGO_URI') to app.config["MONGO_URI"] = os.getenv("MONGO_URI", <your mongo_uri string>) where <your mongo_uri string> is the string that points to your own MongoDB.
+- Your database should be named "drink_hub" with collections set up as outlined in the database design section of this document.
+- From the terminal you can then run the app with the command "python3 app.py" and view in a browser at "http://0.0.0.0:8080/".
 
 
     
