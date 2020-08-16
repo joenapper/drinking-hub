@@ -28,35 +28,35 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
         as they compliment each other and radiate cleanliness and simplicity. The psychological effects that the colour scheme has on the user is instant and can
         dictate whether the user will continue to browse the site or leave, thus making it a vital asset.
             - [#F4F4F4](https://www.colorhexa.com/f4f4f4) (off-White): The off-white was used for the background color of the website. This is because,
-            as opposed to black, white is a reflective colour which in recent studies has been shown to create better user experience. This is due to sub-conscious
-            response where, as a user, we are less likely to click on white space and accidently end up on a different page. 
-            - [#2474D2](https://www.colorhexa.com/2474d2) (Strong Blue): The strong blue color was used for all the titles, subtitles and most buttons.
-            These contrasts really well against off-white background and stand out to the user, therefor increasing user interactions and making links and other interactive
+            as opposed to black, white is a reflective colour which in recent studies has been shown to create a better user experience. This is due to a sub-conscious
+            response where, as a user, we are less likely to click on white space and accidentally end up on a different page. 
+            - [#2474D2](https://www.colorhexa.com/2474d2) (Strong Blue): The strong blue color was used for all the titles, subtitles, and most buttons.
+            These contrast really well against off-white background and stand out to the user, therefor increasing user interactions and making links and other interactive
             features harder to miss.
         To conclude, the color scheme is implemented to create a professional, elegant looking site with great visual representations - contrasting typography
         and striking imagery.
 
     - #### Layout
-        - Throughout the site I maintained a consistent layout through connecting pages and took advantage of multiple CSS classes to enforce the same design principle
-        on other pages and reduce the amount of code needed. Doing this also made the source code cleaner, easier to read and will allow for easy maintainance (if and
+        - Throughout the site, I maintained a consistent layout through connecting pages and took advantage of multiple CSS classes to enforce the same design principle
+        on other pages and reduce the amount of code needed. Doing this also made the source code cleaner, easier to read, and will allow for easy maintenance (if and
         when is necessary). To create my layout I used CCS grid and flexbox properties.
             - [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout): Grid layout was used mainly on the landing page to equally position
-            all the images which are labelled and link to a specific drink/recipe. The use of this made easy work of perfectly lining up all the images whilst also
-            maintaining some responsiveness. I could them simply target the grid layout for smaller screen sizes adjust the sizes to suit.
-            - [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox): Flexbox was used primarily for stagering
-            sections where there is a lot of text. Breaking up sections by stagering images and text actually improves user readability and creates a better
+            all the images which are  labeled and link to a specific drink/recipe. The use of this made easy work of perfectly lining up all the images whilst also
+            maintaining some responsiveness. I could then simply target the grid layout for smaller screen sizes and adjust them suit.
+            - [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox): Flexbox was used primarily for staggering
+            sections where there is a lot of text. Breaking up sections by staggering images and text actually improves user readability and creates a better
             overall look.
-        The use of these features allowed for great responsive design. Using the google developer tools I could keep checking how response each section was and keep working
-        on each area untill I was happy. I had also pre-planned a lot of the interactive features so that I knew how they would function on all screen sizes. For example, the
+        The use of these features allowed for a great responsive design. Using the google developer tools I could keep checking how response each section was and keep working
+        on each area until I was happy. I had also pre-planned a lot of the interactive features so that I knew how they would function on all screen sizes. For example, the
         navigation bar which collapses into a 'hamburger' menu on mobile and animates smoothly on open and close.
 
     - #### Typography
         - I used [Google Fonts](https://fonts.google.com/) to import the [Saira](https://fonts.google.com/specimen/Saira?query=saira) font which was set as the base
-        font-family for the website. I decided to stick with the one font as I really liked the impact it had on the site. Saira, is a highly professional looking
-        font and looks great in any size, color, case and symbol. The font is available in 9 different weights from 'Thin' (100 weight) to 'Black' (900 weight).
+        font-family for the website. I decided to stick with the one font as I really liked the impact it had on the site. Saira is a highly professional looking
+        font and looks great in any size, color, case, and symbol. The font is available in 9 different weights from 'Thin' (100 weight) to 'Black' (900 weight).
         I took advantage of the font-weight property to help distinguish paragraphs from more important headers and titles. The font was imported from Google Fonts to
-        the 'style.css' directory, where I could then easily implement it into my work. Although google is an extremely reliable external source, I added a fallback
-        of sans-serif just in case, for whatever reason, the font doesnt get imported correctly.
+        the 'style.css' directory, where I could then easily implement it into my work. Although Google is an extremely reliable external source, I added a fallback
+        of sans-serif just in case, for whatever reason, the font doesn't get imported correctly.
 
 ## Features
 
@@ -78,7 +78,7 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     3. [PyMongo:](https://pymongo.readthedocs.io/en/stable/)
         - PyMongo was used to enable the python application to access the Mongo database.
     4. [Jinja:](https://jinja.palletsprojects.com/en/2.11.x/)
-        - Jinja is the default templating language for flask and is used to display data from the python application in the frontend html pages
+        - Jinja is the default templating language for Flask and is used to display data from the python application in the frontend HTML pages.
 
 - ### Tools Used
     1. [Figma:](https://www.figma.com/)
@@ -86,9 +86,9 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     2. [MongoDB Atlas:](https://www.mongodb.com/)
         - MongoDB Atlas is the database used.
     3. [MongoDB Compass:](https://www.mongodb.com/)
-        - MongoDB Compass is an app that allowed me to access the database directly and perform CRUD operations separate to the project.
+        - MongoDB Compass is an app that allowed me to access the database directly and perform CRUD operations separate from the project.
     4. [Git:](https://git-scm.com/)
-        - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+        - Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
     5. [Gitpod:](https://www.gitpod.io/)
         - Gitpod was the IDE used throughout the entirety of the project. 
     6. [GitHub:](https://github.com/)
@@ -137,42 +137,42 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     2. I want to find the ingredients and method for making the cocktail.
         - Each cocktail from the home page has a 'View Cocktail' button. If the user likes the look or sound of a drink, they can click this button and it will open a page displaying more information about that specific cocktail, including the ingredients and how to make the drink.
     3. I want to easily post my recipe ideas and showcase them to other users.
-        - As a user, adding my own cocktail is the easiest part of the site. In the navbar theirs a 'Add your own' link which takes you to a form. Here you can add your own cocktail with ingredients, how to make and even your own image. After your recipe is submitted, the user is redirected to the main page were they can see their newly added cocktail at the top of the page. Giving confirmation to the user that their drink has actually been published.
+        - As a user, adding my own cocktail is the easiest part of the site. In the navbar theirs a 'Add your own' link which takes you to a form. Here you can add your own cocktail with ingredients, how to make, and even your own image. After your recipe is submitted, the user is redirected to the main page where they can see their newly added cocktail at the top of the page. Giving confirmation to the user that their drink has actually been published.
     4. I want to easily navigate through the site and always have a way of moving to another section.
-        - The main landing page, add cocktail page and pages which show more information about each cockail, are pages that arent too long, therfor dont allow the user to get trapped as the navbar is always in vision. The navbar allows the user to easily navigate to a desired part of the website and even in smaller screen sizes, transforms into a dropdown menu meaning its always accessable. On main content pages were the list of cocktails is displayed, i used pagination to only show a certain amount of recipes per page, thus cutting down the amount of scrolling for the user. Not only that but i added a 'Back to Top' button at the bottom of the document just to make the site even easier to navigate and avoid any negative experiences.
+        - The main landing page, add cocktail page, and pages that show more information about each cocktail, are pages that aren't too long, therefore don't allow the user to get trapped as the navbar is always in vision. The navbar allows the user to easily navigate to a desired part of the website and even in smaller screen sizes, transforms into a dropdown menu meaning its always accessible. On main content pages where the list of cocktails is displayed, I used pagination to only show a certain amount of recipes per page, thus cutting down the amount of scrolling for the user. Not only that but I added a 'Back to Top' button at the bottom of the document just to make the site even easier to navigate and avoid any negative experiences.
 
 - #### Returning Visitor Goals
     As a Returning Visitor...
     1. I want to see new recipes that I can try.
         - The list of cocktails has been sorted so that the newest added recipes appear at the top, meaning the user will always see the most recently added first.
     2. I want to easily edit or remove my own recipes depending on popularity.
-        - As a user, if i feel like my recipe no longer works or i have found a way to improve it, i can easily edit or delete my recipe using the manage buttons that appear on the main page of each cocktail. If the user wants to delete the recipe, they can click the delete button which will show a disclaimer asking if they are sure. If no is selected, the popup will close, If yes is selected, the drink will be deleted and the user will be returned to the main page. If the edit button is selected, the user will be redirected to a similar form to the 'Add to your' except all the information will already to filled out. Here the user can confirm any changed or simply cancel. 
+        - As a user, if I feel like my recipe no longer works or I have found a way to improve it, I can easily edit or delete my recipe using the manage buttons that appear on the main page of each cocktail. If the user wants to delete the recipe, they can click the delete button which will show a disclaimer asking if they are sure. If no is selected, the popup will close, If yes is selected, the drink will be deleted and the user will be returned to the main page. If the edit button is selected, the user will be redirected to a similar form to the 'Add to your' except all the information will already be filled out. Here the user can confirm any changed or simply cancel. 
 
 - #### Frequent User Goals
     As a Frequent User...
     1. I want to easily contact the admins of the site if I see any issues or bugs.
-        - If any issues or bugs are found in the site, the user can fill out the contact form (link in the footer) which will send there message to the admin of the site. Alternatively, two other emails are provided in case, for whatever reason, the form goes down. Not only that, but the email addresses are acually clickable and will automatically bring up an email form to make sending an email faster and easier.
+        - If any issues or bugs are found in the site, the user can fill out the contact form (link in the footer) which will send there message to the admin of the site. Alternatively, two other emails are provided in case, for whatever reason, the form goes down. Not only that, but the email addresses are actually clickable and will automatically bring up an email form to make sending an email faster and easier.
     2. I want to see continual growth of the database and more recipes.
-        - As stated before, the website automatically shows the newest added cocktails so new drinks can always be easily seen. At the top of the cocktails page, theirs also a counter which shows how many drinks in total. For example "Showing 1-9 of 27 Results". This will update everytime a drink is added, showing the user how many drinks in total their is.
+        - As stated before, the website automatically shows the newest added cocktails so new drinks can always be easily seen. At the top of the cocktails page, theirs also a counter which shows how many drinks in total. For example "Showing 1-9 of 27 Results". This will update every time a drink is added, showing the user how many drinks in total there is.
 
 - ### CRUD Testing
     1. Create
-        - I tested the create functionality of website by using the 'Add My Own' form. I tried to replicate recipes that i already had in the database, which were added in MongoDB, and them check to see all the information was displaying in the same way. 
+        - I tested the create functionality of the website by using the 'Add My Own' form. I tried to replicate recipes that I already had in the database, which were added in MongoDB, and then check to see all the information was displayed in the same way. 
     2. Read
-        - The read functionality was testing using for loops to display all the cocktails in the database and then from there, all the ingredients and information for each cocktail. This was made more aesthetically pleasing using CSS and displayed in a more professional manner. On the main page, i only displayed the cocktail name, image and liquors that were in the cocktail so i could display more on the page. If the user wanted to read more about a cocktail, they can click the 'View Cocktail' button, and all the information will be displayed. 
+        - The read functionality was testing using for loops to display all the cocktails in the database and then from there, all the ingredients and information for each cocktail. This was made more aesthetically pleasing using CSS and displayed in a more professional manner. On the main page, I only displayed the cocktail name, image, and liquors that were in the cocktail so I could display more on the page. If the user wanted to read more about a cocktail, they can click the 'View Cocktail' button, and all the information will be displayed. 
     3. Update
-        - The update functionality was tested by adding a 'Edit' button to each cocktail page. I would deliberately add a new cocktail with a spelling mistake and then use the edit button to correct the mistake. I would then go back to the cocktail page and make sure the changes were successful.
+        - The update functionality was tested by adding an 'Edit' button to each cocktail page. I would deliberately add a new cocktail with a spelling mistake and then use the edit button to correct the mistake. I would then go back to the cocktail page and make sure the changes were successful.
     4. Delete
-        - The delete functionality was tested by adding clones of a recipe to the database and then using the delete button to make sure the recipes were deleting. I used duplicate cocktails to make sure i wasnt deleting any valuable information from the database. There is also a validation step to the delete process where the user has to to click that they are sure they want to delete. I did this just to make sure the user didnt click the botton by accident and end up deleting something that they didnt want to.
+        - The delete functionality was tested by adding clones of a recipe to the database and then using the delete button to make sure the recipes were deleting. I used duplicate cocktails to make sure I wasn't deleting any valuable information from the database. There is also a validation step to the delete process where the user has to click that they are sure they want to delete. I did this just to make sure the user didn't click the button by accident and end up deleting something that they didn't want to.
 
 - ### Bug issues
-    - From the start of the project i was having a lot of trouble using arrays from within the MongoDB. I could easily iterate through the data and have it display how i wanted but the problem came when i was trying to add recipes from the form within the website. I'll use the ingredients for exmaple: 50ml of Vodka. So when trying to add this ingredient to the ingredients array... instead of it going into the database as '50ml of Vodka', each letter would display in its own line (i.e. '5' '0' 'm' 'l'..). Because of this bug, I instead listed all the ingredients inside a 'string' and used the .split() method to show each ingredient on it own line. 
+    - From the start of the project, I was having a lot of trouble using arrays from within MongoDB. I could easily iterate through the data and have it display how I wanted but the problem came when I was trying to add recipes from the form within the website. I'll use the ingredients for example, 50ml of Vodka. So when trying to add this ingredient to the ingredients array... instead of it going into the database as '50ml of Vodka', each letter would display in its own line (i.e. '5' '0' 'm' 'l'..). Because of this bug, I instead listed all the ingredients inside a 'string' and used the .split() method to show each ingredient on its own line. 
 
 - ### Further Testing
     - The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, and Safari browsers. 
     - The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy S10, iPhone 6s & iPhone X.
     - A large amount of testing was done to ensure that everything rendered and linked correctly on all browsers and a wide variety of devices.
-    - All JavaScript code was tested in a separate workspace using Jasmine before importing into the project. 
+    - All JavaScript code was tested in a separate workspace using Jasmine before importing it into the project. 
     - Friends and Family members were asked to review the site and report feedback on any bugs and/or user experience issues/negative experiences.
 
 ## Deployment
@@ -185,8 +185,8 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     2. I created a requirements file with the command 'pip3 freeze --local > requirements.txt'.
     3. I created the Procfile, using the command 'echo web: python app.py > Procfile'. What tells Heroku to run app.py on start-up.
         - Alternatively, this can be achieved by creating the 'Procfile' manually and typing in 'web: python app.py'.
-    4. I then logged into heroku using the command line (heroku login).
-    5. Then I then pushed the repository to Heroku using the command 'git push heroku master'.
+    4. I then logged into Heroku using the command line (heroku login).
+    5. I then pushed the repository to Heroku using the command 'git push heroku master'.
     6. Finally, I ran the app using the command 'heroku ps:scale web=1' which tells Heroku to get the site running.
 
 - #### Heroku
@@ -203,16 +203,16 @@ By completing the above steps I was able to take my code from GitPod and success
 
 The following instructions are based on the user running GitPod on Windows 10. If your IDE / OS is different, your commands may differ slightly, but the process remains the same.
 
-As a minimum you will need Python 3 installed on your machine. You will also need PIP which comes preinstalled with Python versions 3.4 and later. Having a Github account is also necessary.
+As a minimum, you will need Python 3 installed on your machine. You will also need PIP which comes preinstalled with Python versions 3.4 and later. Having a Github account is also necessary.
 
 To deploy locally on your own machine, follow these steps:
-- Open the add on / extenstions tab in your browser and search for GitPod. The very first result should be the correct extension - click on the result, confirm and 'Add' to your browser.
+- Open the add on / extensions tab in your browser and search for GitPod. The very first result should be the correct extension - click on the result, confirm and 'Add' to your browser.
 - Head over to 'https://github.com/joenapper/drinking-hub' and click the green 'GitPod' button (added from the add on / extension). This should open the code in GitPod.
 - Install any required modules using the 'pip3 install -r requirements.txt' command in the terminal.
 - Within the file app.py change the line app.config["MONGO_DBNAME"] = os.getenv("MONGO_DBNAME") to app.config["MONGO_DBNAME"] = os.getenv("MONGO_DBNAME", '<your_database_name>) where <your_database_name> is the name of the database.
 - Also change app.config["MONGO_URI"] = os.getenv('MONGO_URI') to app.config["MONGO_URI"] = os.getenv("MONGO_URI", <your mongo_uri string>) where <your mongo_uri string> is the string that points to your own MongoDB.
 - Your database should be named "drink_hub" with collections set up as outlined in the database design section of this document.
-- From the terminal you can then run the app with the command "python3 app.py" and view in a browser at "http://0.0.0.0:8080/".
+- From the terminal, you can then run the app with the command "python3 app.py" and view it in a browser at "http://0.0.0.0:8080/".
 
 ## Credits
 
