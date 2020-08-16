@@ -73,3 +73,5 @@
     - The form is very easy to read and keeps the same principles on all screen sizes. Each text box takes up 100% of the allowed space (within the body margin) and makes for good readability.
 
     - The actual 'Add Cocktail' button is clearly located at the end of form and uses the strong blue color to stand out amongst the other content. I also positioned the buttom at the right hand side, staggering it from the title, as it is said to improve readability and make the design look better. After all the information is filled out, the user needs to click this button, which will then redirect them to the full list of cocktails where they can see there newly added recipe at the top, showing the user there recipe has been added successfully.
+
+<h3 align="center"><a href="https://github.com/joenapper/drinking-hub/blob/master/README.md">Return to README.md</a></h3>
