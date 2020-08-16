@@ -214,5 +214,16 @@ To deploy locally on your own machine, follow these steps:
 - Your database should be named "drink_hub" with collections set up as outlined in the database design section of this document.
 - From the terminal you can then run the app with the command "python3 app.py" and view in a browser at "http://0.0.0.0:8080/".
 
+## Credits
 
-    
+- ### Content
+    - All HTML, CSS, JavaScript and Python code is my own.
+    - The recipes for the drinks were sourced from [BBC Good Food](https://www.bbcgoodfood.com/).
+    - All other words and text are my own.
+
+- ### Media
+    - The images for the drinks have been sourced from their respective recipes at [BBC Good Food](https://www.bbcgoodfood.com/).
+    - The cocktail logo was sourced from [Google Images](https://www.google.com/imghp?hl=en)
+
+- ### Acknowledgements
+    - My Mentor Mark Railton for continuous helpful feedback and ideas to improve both myself as a developer and my project.
