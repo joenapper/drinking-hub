@@ -1,11 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
+    <!-- Page Title -->
     <title>{% block title %} - Add Your Own {% endblock %}</title>
+    <!-- End -->
+
+    <!-- Page Header -->
     <section class="container">
         <h2>Add your own cocktail!</h2>
     </section>
+    <!-- End -->
 
-    <!-- Contact -->
+    <!-- Add Cocktail Form -->
     <main class="container">
         <form class="addCocktailForm" action="{{url_for('store_cocktail')}}" method="POST">
             <label for="liquors">What type of liquor does your cocktail have?</label>

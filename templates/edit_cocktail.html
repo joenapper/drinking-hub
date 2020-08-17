@@ -1,11 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
+    <!-- Page Title -->
     <title>{% block title %} - Edit Cocktail {% endblock %}</title>
+    <!-- End -->
+
+    <!-- Page Header -->
     <section class="container">
         <h2>Edit cocktail!</h2>
     </section>
+    <!-- End -->
 
-    <!-- Contact -->
+    <!-- Edit Cocktail Form -->
     <main class="container">
         <form class="addCocktailForm" action="{{url_for('update_cocktail', drink_id=drinks._id)}}" method="POST">
             <label for="liquors">What type of liquor does your cocktail have?</label>

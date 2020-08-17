@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
+    <!-- Page Title -->
     <title>Drinking Hub{% block title %} - All Drinks {% endblock %}</title>
+    <!-- End -->
 
+    <!-- Search Bar -->
     <section class="container" id="pageTop">
         <form action="{{url_for('find_cocktails')}}">
             <div class="searchBar">
@@ -12,7 +15,9 @@
             </div>
         </form>
     </section>
+    <!-- End -->
 
+    <!-- Top Pagination -->
     <section class="container">
         <div class="container">
             <div class="paginationTitle">
@@ -22,7 +27,9 @@
             {% include 'pagination.html' %}
         </div>
     </section>
+    <!-- End -->
 
+    <!-- All Drink Recipes -->
     <main class="container">
         <div class="row">
             {% for drink in drinks %}
@@ -38,7 +45,6 @@
                         </div>
                     </div>
                 </div>
-
                 <h4>Contains:</h4>
                 <ul class="drinkLiquors">
                     <li>{{drink.liquors}}</li>
@@ -47,7 +53,9 @@
             {% endfor %}
         </div>
     </main>
+    <!-- End -->
 
+    <!-- Bottom Pagination -->
     <section class="container">
         <div class="container">
             {% include 'pagination.html' %}
@@ -57,8 +65,11 @@
             </div>
         </div>
     </section>
+    <!-- End -->
 
+    <!-- Back To Top -->
     <div class="backToTop">
         <a href="#pageTop">Back To Top</a>
     </div>
+    <!-- End -->
 {% endblock %}

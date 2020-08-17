@@ -1,11 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
+    <!-- Page Title -->
     <title>{% block title %} - {{drinks.drink_name}} {% endblock %}</title>
+    <!-- End -->
 
+    <!-- Back To Results -->
     <section class="container">
         <a class="backToList" href="{{url_for('get_drinks')}}">Back To List</a>  
     </section>
+    <!-- End -->
 
+    <!-- Cocktail Details -->
     <main class="container">
         <h2 class="cocktailName">{{drinks.name}}</h2>
         <div class="cocktailTop">
@@ -14,7 +19,6 @@
             </div>
             <div class="cocktailIngredients">
                 <h4 class="cocktailHeader">Ingredients</h4>
-                <!-- {{drinks.ingredients}} -->
                 {% for ingredient in ingredients %}
                     <li><p><span class="col">&gt;</span> {{ ingredient }}</p></li>
                 {% endfor %} 
@@ -22,7 +26,6 @@
                 <p class="mobNone">{{ drinks.notes }}</p>
             </div>
         </div>
-
         <h4 class="cocktailHeader deskNone">How to make:</h4>
         <p class="deskNone">{{ drinks.notes }}</p>
 
@@ -37,7 +40,9 @@
             {% endfor %}
         </div>
     </main>
+    <!-- End -->
     
+    <!-- Delete Validation -->
     <div id="modalPopup" class="modal">
         <div class="modalContent">
             <span class="closeModalBtn">&times;</span>
@@ -48,4 +53,5 @@
             </div>
         </div>
     </div>
+    <!-- End -->
 {% endblock %}
