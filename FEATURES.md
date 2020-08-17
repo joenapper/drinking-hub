@@ -7,7 +7,7 @@
 ## Features
 
 ### Site-Wide 
-    - The base of the website is primarily made up of landing page, which explains the purpose of the site, the cocktails page, which shows all the added drink recipes and the 'Add Your Own' page, which allows the user to create and add there own creations. The use of the Jinja templating language allowed me to implement a consistent layout throughout the site using a 'base.html' file and 'Block content'. I was able to build a footer and complex, responsive navbar, with an animated 'burger' icon drop-down menu for smaller screen sizes for the 'base.html' page. The use of this allowed me to show the header and footer on every page without having to rewrite any code.   
+- The base of the website is primarily made up of landing page, which explains the purpose of the site, the cocktails page, which shows all the added drink recipes and the 'Add Your Own' page, which allows the user to create and add there own creations. The use of the Jinja templating language allowed me to implement a consistent layout throughout the site using a 'base.html' file and 'Block content'. I was able to build a footer and complex, responsive navbar, with an animated 'burger' icon drop-down menu for smaller screen sizes for the 'base.html' page. The use of this allowed me to show the header and footer on every page without having to rewrite any code.   
 
 - ##### The Navigation Bar
     - The navigation bar is fully responsive and is aesthetically pleasing on all platforms and devices. 
