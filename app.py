@@ -143,6 +143,7 @@ def update_cocktail(drink_id):
 def delete_cocktail(drink_id):
     # Find a recipe by its ID then remove it from the database
     mongo.db.drinks.remove({'_id': ObjectId(drink_id)})
+
     # Redirects to cocktail list to confirm deletion to the user
     return redirect(url_for('get_drinks'))
 
