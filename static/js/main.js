@@ -43,10 +43,12 @@ window.addEventListener('click', clickOutside);
 function openModal() {
     modal.style.display = 'block';
 }
+
 // When either the 'No' or 'X' buttons are clicked, the pop up will close 
 function closeModal() {
     modal.style.display = 'none';
 }
+
 // If the user clicks anywhere but the popup, it will automatically close
 function clickOutside(e) {
     if(e.target == modal) {
