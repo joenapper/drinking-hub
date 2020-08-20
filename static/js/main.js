@@ -27,7 +27,6 @@ function linkSlide() {
 
 navSlide();
 
-
 // Delete Validation Pop up
 const modal = document.getElementById('modalPopup');
 const popUp = document.getElementById('delValidation');
