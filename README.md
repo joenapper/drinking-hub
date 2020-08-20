@@ -6,7 +6,7 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
 <h2 align="center"><a href="https://drinking-hub.herokuapp.com/">Click HERE For The Live Site</a></h2>
 
 ## Table Of Contents
-    [UX](#user-experience-(ux)) || [User Stories](#user-stories) | [Design](#design) | [Layout](#layout) | [Typography](#typography)
+[UX](#user-experience-(ux)) || [User Stories](#user-stories) | [Design](#design) | [Layout](#layout) | [Typography](#typography)
 
 ## User Experience (UX)
 
