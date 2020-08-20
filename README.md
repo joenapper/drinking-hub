@@ -7,10 +7,15 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
 
 ## Table Of Contents
 [UX](#user-experience-(ux)) || [User Stories](#user-stories) | [Design](#design)
+
 [Features](https://github.com/joenapper/drinking-hub/blob/master/FEATURES.md) || Features table of contents can be found in separate [FEATURES.md](https://github.com/joenapper/drinking-hub/blob/master/FEATURES.md) file.
+
 [Technologies Used](#technologies-used) || [Languages](#languages-used) | [Libraries](#libraries-used) | [Tools](#tools-used) | [Hosting](#hosting)
+
 [Testing](#testing) || [Code Validation](#code-validation) | [Testing User Stories](#testing-user-stories-from-user-experience-(ux)-section) | [CRUD Testing](#crud-testing) | [Bugs](#bug-issues) | [Further Testing](#further-testing)
+
 [Deployment](#deployment) || [Deploying To Heroku](#heroku) | [Local Deployment](#local-deployment)
+
 [Credits](#credits) || [Content](#content) | [Media](#media) | [Acknowledgements](#acknowledgements)
 
 ## User Experience (UX)
