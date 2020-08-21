@@ -75,7 +75,11 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     Mock-ups were created early on in this project, before any code was committed. The early designs differ only slightly to the finished product, and in the most part, the final result has turned out very much as I originally envisioned.
 
     You can view the wireframes for each page using the links below:
-    - Home Page || [Desktop](README-assets/wireframes/landingpagedesk.pdf) | [Mobile(nav-open)](README-assets/wireframes/landingpagemobclosed.pdf) | [Mobile(nav-closed)](README-assets/wireframes/landingpagemobopen.pdf)
+    - Landing Page || [Desktop](README-assets/wireframes/landingpagedesk.pdf) | [Mobile(nav-open)](README-assets/wireframes/landingpagemobopen.pdf) | [Mobile(nav-closed)](README-assets/wireframes/landingpagemobclosed.pdf)
+    - All Cocktails || [Desktop](README-assets/wireframes/allcocktailsdesk.pdf) | [Mobile](README-assets/wireframes/allcocktailsmob.pdf)
+    - Individual Cocktail Page || [Desktop](README-assets/wireframes/fullcocktaildesk.pdf) | [Mobile](README-assets/wireframes/fullcocktailmob.pdf)
+    - Add Cocktail || [Desktop](README-assets/wireframes/addcocktaildesk.pdf) | [Mobile](README-assets/wireframes/addcocktailsmob.pdf)
+    - Complete Wireframe || [Desktop](README-assets/wireframes/completedesk.pdf) | [Mobile](README-assets/wireframes/completemob.pdf)
 
     Aternatively, you can view them all directly from [here](README-assets/wireframes).
     
