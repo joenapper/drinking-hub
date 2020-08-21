@@ -71,6 +71,14 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
         the 'style.css' directory, where I could then easily implement it into my work. Although Google is an extremely reliable external source, I added a fallback
         of sans-serif just in case, for whatever reason, the font doesn't get imported correctly.
 
+- ### Wireframes
+    Mock-ups were created early on in this project, before any code was committed. The early designs differ only slightly to the finished product, and in the most part, the final result has turned out very much as I originally envisioned.
+
+    You can view the wireframes for each page using the links below:
+    - Home Page || [Desktop](README-assets/wireframes/landingpagedesk.pdf) | [Mobile(nav-open)](README-assets/wireframes/landingpagemobclosed.pdf) | [Mobile(nav-closed)](README-assets/wireframes/landingpagemobopen.pdf)
+
+    Aternatively, you can view them all directly from [here](README-assets/wireframes).
+    
 ## Features
 
 **Note:** All Features Information can be located in the separate [FEATURES.md](https://github.com/joenapper/drinking-hub/blob/master/FEATURES.md) due to the length of content.
