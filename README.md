@@ -20,7 +20,7 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
 
 ## User Experience (UX)
 
-- ### User stories
+- ### User Stories
     - #### First Time Visitor Goals
         1. As a First Time Visitor, I want to easily find recipes for the drinks I like.
         2. Also, I want to find the ingredients and method for making the cocktail.
@@ -84,42 +84,42 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 - ### Libraries Used
-    1. [Google Fonts:](https://fonts.google.com/)
+    - [Google Fonts:](https://fonts.google.com/)
         - Google fonts was used to import the 'Saira' font into the 'style.css' file which is used on all pages throughout the project.
-    2. [Flask:](https://palletsprojects.com/p/flask/)
+    - [Flask:](https://palletsprojects.com/p/flask/)
         - Flask is the micro web framework that runs the application.
-    3. [PyMongo:](https://pymongo.readthedocs.io/en/stable/)
+    - [PyMongo:](https://pymongo.readthedocs.io/en/stable/)
         - PyMongo was used to enable the python application to access the Mongo database.
-    4. [Jinja:](https://jinja.palletsprojects.com/en/2.11.x/)
+    - [Jinja:](https://jinja.palletsprojects.com/en/2.11.x/)
         - Jinja is the default templating language for Flask and is used to display data from the python application in the frontend HTML pages.
 
 - ### Tools Used
-    1. [Figma:](https://www.figma.com/)
+    - [Figma:](https://www.figma.com/)
         - Figma was used to create the wireframes during the design process.
-    2. [MongoDB Atlas:](https://www.mongodb.com/)
+    - [MongoDB Atlas:](https://www.mongodb.com/)
         - MongoDB Atlas is the database used.
-    3. [MongoDB Compass:](https://www.mongodb.com/)
+    - [MongoDB Compass:](https://www.mongodb.com/)
         - MongoDB Compass is an app that allowed me to access the database directly and perform CRUD operations separate from the project.
-    4. [Git:](https://git-scm.com/)
+    - [Git:](https://git-scm.com/)
         - Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
-    5. [Gitpod:](https://www.gitpod.io/)
+    - [Gitpod:](https://www.gitpod.io/)
         - Gitpod was the IDE used throughout the entirety of the project. 
-    6. [GitHub:](https://github.com/)
+    - [GitHub:](https://github.com/)
         - GitHub is used to store the project's code after being pushed from Git.
-    7. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
+    - [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
         - Photoshop was used to create 'README-assets' images. 
-    8. [Web Formatter:](https://webformatter.com/)
+    - [Web Formatter:](https://webformatter.com/)
         - Web Formatter was used to beautify code to keep everything neat and improve readability. 
         - This can also be done by utilizing Beautify Cmd (Shift + Alt + F) in GitPod.
-    9. [Grammarly:](https://app.grammarly.com/)
+    - [Grammarly:](https://app.grammarly.com/)
         - Grammarly was used at the end to correct any spelling/grammar mistakes. 
-    10. [Jasmine:](https://jasmine.github.io/)
+    - [Jasmine:](https://jasmine.github.io/)
         - Jasmine was used to test the JavaScript before Implementing It into the website.
-    11. [EmailJS:](https://www.emailjs.com/)
+    - [EmailJS:](https://www.emailjs.com/)
         - The EmailJS API was used to allow users to contact site admin on bug fixes or any general enquiries. 
 
 - ### Hosting
-    1. [Heroku:](https://www.heroku.com/)
+    - [Heroku:](https://www.heroku.com/)
         - Heroku was used to deploy the final version of the site.
 
 ## Testing
@@ -145,40 +145,40 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
 
 - #### First Time Visitor Goals
     As a First Time Visitor...
-    1. I want to easily find recipes for the drinks I like.
+    - I want to easily find recipes for the drinks I like.
         - On the home page theirs a search bar that allows the user to search for drinks that contain a specific liquor. For example... if the user searches 'Vodka'.
-    2. I want to find the ingredients and method for making the cocktail.
+    - I want to find the ingredients and method for making the cocktail.
         - Each cocktail from the home page has a 'View Cocktail' button. If the user likes the look or sound of a drink, they can click this button and it will open a page displaying more information about that specific cocktail, including the ingredients and how to make the drink.
-    3. I want to easily post my recipe ideas and showcase them to other users.
+    - I want to easily post my recipe ideas and showcase them to other users.
         - As a user, adding my own cocktail is the easiest part of the site. In the navbar theirs a 'Add your own' link which takes you to a form. Here you can add your own cocktail with ingredients, how to make, and even your own image. After your recipe is submitted, the user is redirected to the main page where they can see their newly added cocktail at the top of the page. Giving confirmation to the user that their drink has actually been published.
-    4. I want to easily navigate through the site and always have a way of moving to another section.
+    - I want to easily navigate through the site and always have a way of moving to another section.
         - The main landing page, add cocktail page, and pages that show more information about each cocktail, are pages that aren't too long, therefore don't allow the user to get trapped as the navbar is always in vision. The navbar allows the user to easily navigate to a desired part of the website and even in smaller screen sizes, transforms into a dropdown menu meaning its always accessible. On main content pages where the list of cocktails is displayed, I used pagination to only show a certain amount of recipes per page, thus cutting down the amount of scrolling for the user. Not only that but I added a 'Back to Top' button at the bottom of the document just to make the site even easier to navigate and avoid any negative experiences.
 
 - #### Returning Visitor Goals
     As a Returning Visitor...
-    1. I want to see new recipes that I can try.
+    - I want to see new recipes that I can try.
         - The list of cocktails has been sorted so that the newest added recipes appear at the top, meaning the user will always see the most recently added first.
-    2. I want to easily edit or remove my own recipes depending on popularity.
+    - I want to easily edit or remove my own recipes depending on popularity.
         - As a user, if I feel like my recipe no longer works or I have found a way to improve it, I can easily edit or delete my recipe using the manage buttons that appear on the main page of each cocktail. If the user wants to delete the recipe, they can click the delete button which will show a disclaimer asking if they are sure. If no is selected, the popup will close, If yes is selected, the drink will be deleted and the user will be returned to the main page. If the edit button is selected, the user will be redirected to a similar form to the 'Add to your' except all the information will already be filled out. Here the user can confirm any changed or simply cancel. 
 
 - #### Frequent User Goals
     As a Frequent User...
-    1. I want to easily contact the admins of the site if I see any issues or bugs.
+    - I want to easily contact the admins of the site if I see any issues or bugs.
         - If any issues or bugs are found in the site, the user can fill out the contact form (link in the footer) which will send there message to the admin of the site. Alternatively, two other emails are provided in case, for whatever reason, the form goes down. Not only that, but the email addresses are actually clickable and will automatically bring up an email form to make sending an email faster and easier.
-    2. I want to see continual growth of the database and more recipes.
+    - I want to see continual growth of the database and more recipes.
         - As stated before, the website automatically shows the newest added cocktails so new drinks can always be easily seen. At the top of the cocktails page, theirs also a counter which shows how many drinks in total. For example "Showing 1-9 of 27 Results". This will update every time a drink is added, showing the user how many drinks in total there is.
 
 - ### CRUD Testing
-    1. Create
+    - Create
         - I tested the create functionality of the website by using the 'Add My Own' form. I tried to replicate recipes that I already had in the database, which were added in MongoDB, and then check to see all the information was displayed in the same way. 
-    2. Read
+    - Read
         - The read functionality was testing using for loops to display all the cocktails in the database and then from there, all the ingredients and information for each cocktail. This was made more aesthetically pleasing using CSS and displayed in a more professional manner. On the main page, I only displayed the cocktail name, image, and liquors that were in the cocktail so I could display more on the page. If the user wanted to read more about a cocktail, they can click the 'View Cocktail' button, and all the information will be displayed. 
-    3. Update
+    - Update
         - The update functionality was tested by adding an 'Edit' button to each cocktail page. I would deliberately add a new cocktail with a spelling mistake and then use the edit button to correct the mistake. I would then go back to the cocktail page and make sure the changes were successful.
-    4. Delete
+    - Delete
         - The delete functionality was tested by adding clones of a recipe to the database and then using the delete button to make sure the recipes were deleting. I used duplicate cocktails to make sure I wasn't deleting any valuable information from the database. There is also a validation step to the delete process where the user has to click that they are sure they want to delete. I did this just to make sure the user didn't click the button by accident and end up deleting something that they didn't want to.
 
-- ### Bug issues
+- ### Bug Issues
     - From the start of the project, I was having a lot of trouble using arrays from within MongoDB. I could easily iterate through the data and have it display how I wanted but the problem came when I was trying to add recipes from the form within the website. I'll use the ingredients for example, 50ml of Vodka. So when trying to add this ingredient to the ingredients array... instead of it going into the database as '50ml of Vodka', each letter would display in its own line (i.e. '5' '0' 'm' 'l'..). Because of this bug, I instead listed all the ingredients inside a 'string' and used the .split() method to show each ingredient on its own line. 
 
 - ### Further Testing
@@ -194,21 +194,21 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     - The site was deployed to [Heroku](https://www.heroku.com/) using the following steps...
 
 - #### GitPod
-    1. I turned off Flask debugging by setting 'debug=False'.
-    2. I created a requirements file with the command 'pip3 freeze --local > requirements.txt'.
-    3. I created the Procfile, using the command 'echo web: python app.py > Procfile'. What tells Heroku to run app.py on start-up.
+    - I turned off Flask debugging by setting 'debug=False'.
+    - I created a requirements file with the command 'pip3 freeze --local > requirements.txt'.
+    - I created the Procfile, using the command 'echo web: python app.py > Procfile'. What tells Heroku to run app.py on start-up.
         - Alternatively, this can be achieved by creating the 'Procfile' manually and typing in 'web: python app.py'.
-    4. I then logged into Heroku using the command line (heroku login).
-    5. I then pushed the repository to Heroku using the command 'git push heroku master'.
-    6. Finally, I ran the app using the command 'heroku ps:scale web=1' which tells Heroku to get the site running.
+    - I then logged into Heroku using the command line (heroku login).
+    - I then pushed the repository to Heroku using the command 'git push heroku master'.
+    - Finally, I ran the app using the command 'heroku ps:scale web=1' which tells Heroku to get the site running.
 
 - #### Heroku
-    1. From the Heroku dashboard I created a new app, using the name 'drinking-hub' and set the region to Europe.
-    2. In the settings tab I clicked reveal config vars and entered the required environment variables, which in this case were:
+    - From the Heroku dashboard I created a new app, using the name 'drinking-hub' and set the region to Europe.
+    - In the settings tab I clicked reveal config vars and entered the required environment variables, which in this case were:
         - IP: '0.0.0.0'
         - PORT: '5000'
         - Mongo_URI: 'mongodb+srv://root:<password_removed>@myfirstcluster-fai9p.mongodb.net/drink_hub?retryWrites=true&w=majority'
-    3. Finally, click the 'open app' button located at the top right of the screen to open the live website.
+    - Finally, click the 'open app' button located at the top right of the screen to open the live website.
 
 By completing the above steps I was able to take my code from GitPod and successfully deploy the project to Heroku.
 
