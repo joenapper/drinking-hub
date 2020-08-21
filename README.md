@@ -19,7 +19,6 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
 [Credits](#credits) || [Content](#content) | [Media](#media) | [Acknowledgements](#acknowledgements)
 
 ## User Experience (UX)
-
 - ### User Stories
     - #### First Time Visitor Goals
         1. As a First Time Visitor, I want to easily find recipes for the drinks I like.
@@ -84,11 +83,9 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     Aternatively, you can view them all directly from [here](README-assets/wireframes).
     
 ## Features
-
 **Note:** All Features Information can be located in the separate [FEATURES.md](https://github.com/joenapper/drinking-hub/blob/master/FEATURES.md) due to the length of content.
 
 ## Technologies Used
-
 - ### Languages Used
     - [HTML5](https://en.wikipedia.org/wiki/HTML5)
     - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
@@ -135,7 +132,6 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
         - Heroku was used to deploy the final version of the site.
 
 ## Testing
-
 - ### Code Validation
     - #### HTML
         - [W3C HTML Validator](https://validator.w3.org/)
@@ -201,7 +197,6 @@ The Drinking Hub is a drinking database for users to discover recipes for cockta
     - Friends and Family members were asked to review the site and report feedback on any bugs and/or user experience issues/negative experiences.
 
 ## Deployment
-
 - ### Heroku
     - The site was deployed to [Heroku](https://www.heroku.com/) using the following steps...
 
@@ -240,7 +235,6 @@ To deploy locally on your own machine, follow these steps:
 - From the terminal, you can then run the app with the command "python3 app.py" and view it in a browser at "http://0.0.0.0:8080/".
 
 ## Credits
-
 - ### Content
     - All HTML, CSS, JavaScript and Python code is my own.
     - The recipes for the drinks were sourced from [BBC Good Food](https://www.bbcgoodfood.com/).
